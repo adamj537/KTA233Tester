@@ -37,16 +37,16 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.Button10 = New System.Windows.Forms.Button
-        Me.Button9 = New System.Windows.Forms.Button
-        Me.Button8 = New System.Windows.Forms.Button
-        Me.Button7 = New System.Windows.Forms.Button
-        Me.Button6 = New System.Windows.Forms.Button
-        Me.Button5 = New System.Windows.Forms.Button
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.Button4 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.ButtonAllOff = New System.Windows.Forms.Button
+        Me.ButtonAllOn = New System.Windows.Forms.Button
+        Me.ButtonToggle8 = New System.Windows.Forms.Button
+        Me.ButtonToggle7 = New System.Windows.Forms.Button
+        Me.ButtonToggle6 = New System.Windows.Forms.Button
+        Me.ButtonToggle5 = New System.Windows.Forms.Button
+        Me.ButtonToggle3 = New System.Windows.Forms.Button
+        Me.ButtonToggle4 = New System.Windows.Forms.Button
+        Me.ButtonToggle2 = New System.Windows.Forms.Button
+        Me.ButtonToggle1 = New System.Windows.Forms.Button
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
         Me.Panel4 = New System.Windows.Forms.Panel
@@ -57,19 +57,19 @@ Partial Class Form1
         Me.Label8 = New System.Windows.Forms.Label
         Me.Label9 = New System.Windows.Forms.Label
         Me.GroupBox4 = New System.Windows.Forms.GroupBox
-        Me.Button11 = New System.Windows.Forms.Button
+        Me.ButtonChangeAddr = New System.Windows.Forms.Button
         Me.txtNewAddr = New System.Windows.Forms.TextBox
         Me.GroupBox5 = New System.Windows.Forms.GroupBox
-        Me.Button13 = New System.Windows.Forms.Button
-        Me.Button12 = New System.Windows.Forms.Button
+        Me.ButtonOpenPort = New System.Windows.Forms.Button
+        Me.ButtonBaud = New System.Windows.Forms.Button
         Me.Label14 = New System.Windows.Forms.Label
         Me.Label13 = New System.Windows.Forms.Label
         Me.txtRX = New System.Windows.Forms.TextBox
         Me.txtTX = New System.Windows.Forms.TextBox
         Me.Label12 = New System.Windows.Forms.Label
-        Me.TextBox3 = New System.Windows.Forms.TextBox
+        Me.TextBoxAddr = New System.Windows.Forms.TextBox
         Me.Label11 = New System.Windows.Forms.Label
-        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.TextBoxPort = New System.Windows.Forms.TextBox
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
@@ -197,16 +197,16 @@ Partial Class Form1
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Button10)
-        Me.GroupBox2.Controls.Add(Me.Button9)
-        Me.GroupBox2.Controls.Add(Me.Button8)
-        Me.GroupBox2.Controls.Add(Me.Button7)
-        Me.GroupBox2.Controls.Add(Me.Button6)
-        Me.GroupBox2.Controls.Add(Me.Button5)
-        Me.GroupBox2.Controls.Add(Me.Button3)
-        Me.GroupBox2.Controls.Add(Me.Button4)
-        Me.GroupBox2.Controls.Add(Me.Button2)
-        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.ButtonAllOff)
+        Me.GroupBox2.Controls.Add(Me.ButtonAllOn)
+        Me.GroupBox2.Controls.Add(Me.ButtonToggle8)
+        Me.GroupBox2.Controls.Add(Me.ButtonToggle7)
+        Me.GroupBox2.Controls.Add(Me.ButtonToggle6)
+        Me.GroupBox2.Controls.Add(Me.ButtonToggle5)
+        Me.GroupBox2.Controls.Add(Me.ButtonToggle3)
+        Me.GroupBox2.Controls.Add(Me.ButtonToggle4)
+        Me.GroupBox2.Controls.Add(Me.ButtonToggle2)
+        Me.GroupBox2.Controls.Add(Me.ButtonToggle1)
         Me.GroupBox2.Location = New System.Drawing.Point(122, 90)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(144, 163)
@@ -214,113 +214,113 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Relays"
         '
-        'Button10
+        'ButtonAllOff
         '
-        Me.Button10.BackColor = System.Drawing.SystemColors.Control
-        Me.Button10.Location = New System.Drawing.Point(74, 131)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(62, 22)
-        Me.Button10.TabIndex = 1
-        Me.Button10.Text = "ALL OFF"
-        Me.Button10.UseVisualStyleBackColor = False
+        Me.ButtonAllOff.BackColor = System.Drawing.SystemColors.Control
+        Me.ButtonAllOff.Location = New System.Drawing.Point(74, 131)
+        Me.ButtonAllOff.Name = "ButtonAllOff"
+        Me.ButtonAllOff.Size = New System.Drawing.Size(62, 22)
+        Me.ButtonAllOff.TabIndex = 1
+        Me.ButtonAllOff.Text = "ALL OFF"
+        Me.ButtonAllOff.UseVisualStyleBackColor = False
         '
-        'Button9
+        'ButtonAllOn
         '
-        Me.Button9.BackColor = System.Drawing.SystemColors.Control
-        Me.Button9.Location = New System.Drawing.Point(6, 131)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(62, 22)
-        Me.Button9.TabIndex = 1
-        Me.Button9.Text = "ALL ON"
-        Me.Button9.UseVisualStyleBackColor = False
+        Me.ButtonAllOn.BackColor = System.Drawing.SystemColors.Control
+        Me.ButtonAllOn.Location = New System.Drawing.Point(6, 131)
+        Me.ButtonAllOn.Name = "ButtonAllOn"
+        Me.ButtonAllOn.Size = New System.Drawing.Size(62, 22)
+        Me.ButtonAllOn.TabIndex = 1
+        Me.ButtonAllOn.Text = "ALL ON"
+        Me.ButtonAllOn.UseVisualStyleBackColor = False
         '
-        'Button8
+        'ButtonToggle8
         '
-        Me.Button8.BackColor = System.Drawing.Color.Red
-        Me.Button8.ForeColor = System.Drawing.Color.White
-        Me.Button8.Location = New System.Drawing.Point(74, 103)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(62, 22)
-        Me.Button8.TabIndex = 1
-        Me.Button8.Text = "Toggle 8"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.ButtonToggle8.BackColor = System.Drawing.Color.Red
+        Me.ButtonToggle8.ForeColor = System.Drawing.Color.White
+        Me.ButtonToggle8.Location = New System.Drawing.Point(74, 103)
+        Me.ButtonToggle8.Name = "ButtonToggle8"
+        Me.ButtonToggle8.Size = New System.Drawing.Size(62, 22)
+        Me.ButtonToggle8.TabIndex = 1
+        Me.ButtonToggle8.Text = "Toggle 8"
+        Me.ButtonToggle8.UseVisualStyleBackColor = False
         '
-        'Button7
+        'ButtonToggle7
         '
-        Me.Button7.BackColor = System.Drawing.Color.Red
-        Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(74, 75)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(62, 22)
-        Me.Button7.TabIndex = 1
-        Me.Button7.Text = "Toggle 7"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.ButtonToggle7.BackColor = System.Drawing.Color.Red
+        Me.ButtonToggle7.ForeColor = System.Drawing.Color.White
+        Me.ButtonToggle7.Location = New System.Drawing.Point(74, 75)
+        Me.ButtonToggle7.Name = "ButtonToggle7"
+        Me.ButtonToggle7.Size = New System.Drawing.Size(62, 22)
+        Me.ButtonToggle7.TabIndex = 1
+        Me.ButtonToggle7.Text = "Toggle 7"
+        Me.ButtonToggle7.UseVisualStyleBackColor = False
         '
-        'Button6
+        'ButtonToggle6
         '
-        Me.Button6.BackColor = System.Drawing.Color.Red
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(74, 47)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(62, 22)
-        Me.Button6.TabIndex = 1
-        Me.Button6.Text = "Toggle 6"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.ButtonToggle6.BackColor = System.Drawing.Color.Red
+        Me.ButtonToggle6.ForeColor = System.Drawing.Color.White
+        Me.ButtonToggle6.Location = New System.Drawing.Point(74, 47)
+        Me.ButtonToggle6.Name = "ButtonToggle6"
+        Me.ButtonToggle6.Size = New System.Drawing.Size(62, 22)
+        Me.ButtonToggle6.TabIndex = 1
+        Me.ButtonToggle6.Text = "Toggle 6"
+        Me.ButtonToggle6.UseVisualStyleBackColor = False
         '
-        'Button5
+        'ButtonToggle5
         '
-        Me.Button5.BackColor = System.Drawing.Color.Red
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(74, 19)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(62, 22)
-        Me.Button5.TabIndex = 1
-        Me.Button5.Text = "Toggle 5"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.ButtonToggle5.BackColor = System.Drawing.Color.Red
+        Me.ButtonToggle5.ForeColor = System.Drawing.Color.White
+        Me.ButtonToggle5.Location = New System.Drawing.Point(74, 19)
+        Me.ButtonToggle5.Name = "ButtonToggle5"
+        Me.ButtonToggle5.Size = New System.Drawing.Size(62, 22)
+        Me.ButtonToggle5.TabIndex = 1
+        Me.ButtonToggle5.Text = "Toggle 5"
+        Me.ButtonToggle5.UseVisualStyleBackColor = False
         '
-        'Button3
+        'ButtonToggle3
         '
-        Me.Button3.BackColor = System.Drawing.Color.Red
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(6, 75)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(62, 22)
-        Me.Button3.TabIndex = 1
-        Me.Button3.Text = "Toggle 3"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.ButtonToggle3.BackColor = System.Drawing.Color.Red
+        Me.ButtonToggle3.ForeColor = System.Drawing.Color.White
+        Me.ButtonToggle3.Location = New System.Drawing.Point(6, 75)
+        Me.ButtonToggle3.Name = "ButtonToggle3"
+        Me.ButtonToggle3.Size = New System.Drawing.Size(62, 22)
+        Me.ButtonToggle3.TabIndex = 1
+        Me.ButtonToggle3.Text = "Toggle 3"
+        Me.ButtonToggle3.UseVisualStyleBackColor = False
         '
-        'Button4
+        'ButtonToggle4
         '
-        Me.Button4.BackColor = System.Drawing.Color.Red
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(6, 103)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(62, 22)
-        Me.Button4.TabIndex = 1
-        Me.Button4.Text = "Toggle 4"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.ButtonToggle4.BackColor = System.Drawing.Color.Red
+        Me.ButtonToggle4.ForeColor = System.Drawing.Color.White
+        Me.ButtonToggle4.Location = New System.Drawing.Point(6, 103)
+        Me.ButtonToggle4.Name = "ButtonToggle4"
+        Me.ButtonToggle4.Size = New System.Drawing.Size(62, 22)
+        Me.ButtonToggle4.TabIndex = 1
+        Me.ButtonToggle4.Text = "Toggle 4"
+        Me.ButtonToggle4.UseVisualStyleBackColor = False
         '
-        'Button2
+        'ButtonToggle2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Red
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(6, 47)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(62, 22)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Toggle 2"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.ButtonToggle2.BackColor = System.Drawing.Color.Red
+        Me.ButtonToggle2.ForeColor = System.Drawing.Color.White
+        Me.ButtonToggle2.Location = New System.Drawing.Point(6, 47)
+        Me.ButtonToggle2.Name = "ButtonToggle2"
+        Me.ButtonToggle2.Size = New System.Drawing.Size(62, 22)
+        Me.ButtonToggle2.TabIndex = 1
+        Me.ButtonToggle2.Text = "Toggle 2"
+        Me.ButtonToggle2.UseVisualStyleBackColor = False
         '
-        'Button1
+        'ButtonToggle1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Red
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(6, 19)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(62, 22)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Toggle 1"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.ButtonToggle1.BackColor = System.Drawing.Color.Red
+        Me.ButtonToggle1.ForeColor = System.Drawing.Color.White
+        Me.ButtonToggle1.Location = New System.Drawing.Point(6, 19)
+        Me.ButtonToggle1.Name = "ButtonToggle1"
+        Me.ButtonToggle1.Size = New System.Drawing.Size(62, 22)
+        Me.ButtonToggle1.TabIndex = 0
+        Me.ButtonToggle1.Text = "Toggle 1"
+        Me.ButtonToggle1.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -417,7 +417,7 @@ Partial Class Form1
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.Button11)
+        Me.GroupBox4.Controls.Add(Me.ButtonChangeAddr)
         Me.GroupBox4.Controls.Add(Me.txtNewAddr)
         Me.GroupBox4.Location = New System.Drawing.Point(12, 90)
         Me.GroupBox4.Name = "GroupBox4"
@@ -426,14 +426,14 @@ Partial Class Form1
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Address"
         '
-        'Button11
+        'ButtonChangeAddr
         '
-        Me.Button11.Location = New System.Drawing.Point(39, 14)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(58, 20)
-        Me.Button11.TabIndex = 1
-        Me.Button11.Text = "Change"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.ButtonChangeAddr.Location = New System.Drawing.Point(39, 14)
+        Me.ButtonChangeAddr.Name = "ButtonChangeAddr"
+        Me.ButtonChangeAddr.Size = New System.Drawing.Size(58, 20)
+        Me.ButtonChangeAddr.TabIndex = 1
+        Me.ButtonChangeAddr.Text = "Change"
+        Me.ButtonChangeAddr.UseVisualStyleBackColor = True
         '
         'txtNewAddr
         '
@@ -447,16 +447,16 @@ Partial Class Form1
         '
         'GroupBox5
         '
-        Me.GroupBox5.Controls.Add(Me.Button13)
-        Me.GroupBox5.Controls.Add(Me.Button12)
+        Me.GroupBox5.Controls.Add(Me.ButtonOpenPort)
+        Me.GroupBox5.Controls.Add(Me.ButtonBaud)
         Me.GroupBox5.Controls.Add(Me.Label14)
         Me.GroupBox5.Controls.Add(Me.Label13)
         Me.GroupBox5.Controls.Add(Me.txtRX)
         Me.GroupBox5.Controls.Add(Me.txtTX)
         Me.GroupBox5.Controls.Add(Me.Label12)
-        Me.GroupBox5.Controls.Add(Me.TextBox3)
+        Me.GroupBox5.Controls.Add(Me.TextBoxAddr)
         Me.GroupBox5.Controls.Add(Me.Label11)
-        Me.GroupBox5.Controls.Add(Me.TextBox2)
+        Me.GroupBox5.Controls.Add(Me.TextBoxPort)
         Me.GroupBox5.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(254, 72)
@@ -464,23 +464,23 @@ Partial Class Form1
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Comms"
         '
-        'Button13
+        'ButtonOpenPort
         '
-        Me.Button13.Location = New System.Drawing.Point(66, 18)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(45, 20)
-        Me.Button13.TabIndex = 16
-        Me.Button13.Text = "Open"
-        Me.Button13.UseVisualStyleBackColor = True
+        Me.ButtonOpenPort.Location = New System.Drawing.Point(66, 18)
+        Me.ButtonOpenPort.Name = "ButtonOpenPort"
+        Me.ButtonOpenPort.Size = New System.Drawing.Size(45, 20)
+        Me.ButtonOpenPort.TabIndex = 16
+        Me.ButtonOpenPort.Text = "Open"
+        Me.ButtonOpenPort.UseVisualStyleBackColor = True
         '
-        'Button12
+        'ButtonBaud
         '
-        Me.Button12.Location = New System.Drawing.Point(117, 18)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(43, 20)
-        Me.Button12.TabIndex = 15
-        Me.Button12.Text = "Baud"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.ButtonBaud.Location = New System.Drawing.Point(117, 18)
+        Me.ButtonBaud.Name = "ButtonBaud"
+        Me.ButtonBaud.Size = New System.Drawing.Size(43, 20)
+        Me.ButtonBaud.TabIndex = 15
+        Me.ButtonBaud.Text = "Baud"
+        Me.ButtonBaud.UseVisualStyleBackColor = True
         '
         'Label14
         '
@@ -526,14 +526,14 @@ Partial Class Form1
         Me.Label12.Text = "Address:"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'TextBox3
+        'TextBoxAddr
         '
-        Me.TextBox3.Location = New System.Drawing.Point(218, 18)
-        Me.TextBox3.MaxLength = 2
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(28, 20)
-        Me.TextBox3.TabIndex = 9
-        Me.TextBox3.Text = "0"
+        Me.TextBoxAddr.Location = New System.Drawing.Point(218, 18)
+        Me.TextBoxAddr.MaxLength = 2
+        Me.TextBoxAddr.Name = "TextBoxAddr"
+        Me.TextBoxAddr.Size = New System.Drawing.Size(28, 20)
+        Me.TextBoxAddr.TabIndex = 9
+        Me.TextBoxAddr.Text = "0"
         '
         'Label11
         '
@@ -544,14 +544,14 @@ Partial Class Form1
         Me.Label11.TabIndex = 8
         Me.Label11.Text = "Port:"
         '
-        'TextBox2
+        'TextBoxPort
         '
-        Me.TextBox2.Location = New System.Drawing.Point(38, 18)
-        Me.TextBox2.MaxLength = 2
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(21, 20)
-        Me.TextBox2.TabIndex = 0
-        Me.TextBox2.Text = "1"
+        Me.TextBoxPort.Location = New System.Drawing.Point(38, 18)
+        Me.TextBoxPort.MaxLength = 2
+        Me.TextBoxPort.Name = "TextBoxPort"
+        Me.TextBoxPort.Size = New System.Drawing.Size(21, 20)
+        Me.TextBoxPort.TabIndex = 0
+        Me.TextBoxPort.Text = "1"
         '
         'Timer2
         '
@@ -568,10 +568,10 @@ Partial Class Form1
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Location = New System.Drawing.Point(68, 342)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(139, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(104, 13)
         Me.LinkLabel1.TabIndex = 10
         Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "www.oceancontrols.com.au"
+        Me.LinkLabel1.Text = "www.dwyer-inst.com"
         Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
@@ -591,7 +591,7 @@ Partial Class Form1
         Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "KTA-223 Relayduino Tester"
+        Me.Text = "Digihelic Final Tester"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -618,16 +618,16 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents ButtonToggle1 As System.Windows.Forms.Button
+    Friend WithEvents ButtonToggle8 As System.Windows.Forms.Button
+    Friend WithEvents ButtonToggle7 As System.Windows.Forms.Button
+    Friend WithEvents ButtonToggle6 As System.Windows.Forms.Button
+    Friend WithEvents ButtonToggle5 As System.Windows.Forms.Button
+    Friend WithEvents ButtonToggle3 As System.Windows.Forms.Button
+    Friend WithEvents ButtonToggle4 As System.Windows.Forms.Button
+    Friend WithEvents ButtonToggle2 As System.Windows.Forms.Button
+    Friend WithEvents ButtonAllOff As System.Windows.Forms.Button
+    Friend WithEvents ButtonAllOn As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
@@ -638,35 +638,35 @@ Partial Class Form1
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button11 As System.Windows.Forms.Button
+    Friend WithEvents ButtonChangeAddr As System.Windows.Forms.Button
     Friend WithEvents txtNewAddr As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxPort As System.Windows.Forms.TextBox
 
     Private Sub GroupBox5_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox5.Enter
 
     End Sub
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxAddr As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents txtRX As System.Windows.Forms.TextBox
     Friend WithEvents txtTX As System.Windows.Forms.TextBox
-    Friend WithEvents Button12 As System.Windows.Forms.Button
+    Friend WithEvents ButtonBaud As System.Windows.Forms.Button
 
-    Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
+    Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonBaud.Click
         Form2.Show()
 
     End Sub
 
-    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
-
-
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBoxPort.TextChanged
+        My.Settings.Port = Val(TextBoxPort.Text)
 
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        TextBoxPort.Text = My.Settings.Port
         'Try
         '    SerialPort1.PortName = "COM" & TextBox2.Text
         '    SerialPort1.BaudRate = 9600
@@ -703,16 +703,16 @@ Partial Class Form1
         End Try
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Toggle1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonToggle1.Click
         Try
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
-                If Button1.BackColor = Color.Red Then
+                If ButtonToggle1.BackColor = Color.Red Then
                     outstr = "@" & addr & " ON 1"
                     txtTX.Text = outstr
                     outstr = outstr & Chr(13) 'vbNewLine
@@ -730,17 +730,17 @@ Partial Class Form1
 
         End Try
     End Sub
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonToggle2.Click
         Try
 
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
-                If Button2.BackColor = Color.Red Then
+                If ButtonToggle2.BackColor = Color.Red Then
                     outstr = "@" & addr & " ON 2"
                     txtTX.Text = outstr
                     outstr = outstr & Chr(13) 'vbNewLine
@@ -758,16 +758,16 @@ Partial Class Form1
 
         End Try
     End Sub
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonToggle3.Click
         Try
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
-                If Button3.BackColor = Color.Red Then
+                If ButtonToggle3.BackColor = Color.Red Then
                     outstr = "@" & addr & " ON 3"
                     txtTX.Text = outstr
                     outstr = outstr & Chr(13) 'vbNewLine
@@ -785,16 +785,16 @@ Partial Class Form1
 
         End Try
     End Sub
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonToggle4.Click
         Try
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
-                If Button4.BackColor = Color.Red Then
+                If ButtonToggle4.BackColor = Color.Red Then
                     outstr = "@" & addr & " ON 4"
                     txtTX.Text = outstr
                     outstr = outstr & Chr(13) 'vbNewLine
@@ -812,16 +812,16 @@ Partial Class Form1
 
         End Try
     End Sub
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonToggle5.Click
         Try
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
-                If Button5.BackColor = Color.Red Then
+                If ButtonToggle5.BackColor = Color.Red Then
                     outstr = "@" & addr & " ON 5"
                     txtTX.Text = outstr
                     outstr = outstr & Chr(13) 'vbNewLine
@@ -839,16 +839,16 @@ Partial Class Form1
 
         End Try
     End Sub
-    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonToggle6.Click
         Try
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
-                If Button6.BackColor = Color.Red Then
+                If ButtonToggle6.BackColor = Color.Red Then
                     outstr = "@" & addr & " ON 6"
                     txtTX.Text = outstr
                     outstr = outstr & Chr(13) 'vbNewLine
@@ -866,16 +866,16 @@ Partial Class Form1
 
         End Try
     End Sub
-    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonToggle7.Click
         Try
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
-                If Button7.BackColor = Color.Red Then
+                If ButtonToggle7.BackColor = Color.Red Then
                     outstr = "@" & addr & " ON 7"
                     txtTX.Text = outstr
                     outstr = outstr & Chr(13) 'vbNewLine
@@ -893,16 +893,16 @@ Partial Class Form1
 
         End Try
     End Sub
-    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonToggle8.Click
         Try
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
-                If Button8.BackColor = Color.Red Then
+                If ButtonToggle8.BackColor = Color.Red Then
                     outstr = "@" & addr & " ON 8"
                     txtTX.Text = outstr
                     outstr = outstr & Chr(13) 'vbNewLine
@@ -920,14 +920,14 @@ Partial Class Form1
 
         End Try
     End Sub
-    Private Sub Button9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button9.Click
+    Private Sub Button9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonAllOn.Click
         Try
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
                 outstr = "@" & addr & " ON 0"
                 txtTX.Text = outstr
@@ -940,14 +940,14 @@ Partial Class Form1
 
         End Try
     End Sub
-    Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
+    Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonAllOff.Click
         Try
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
                 outstr = "@" & addr & " OF 0"
                 txtTX.Text = outstr
@@ -960,14 +960,14 @@ Partial Class Form1
 
         End Try
     End Sub
-    Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
+    Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonChangeAddr.Click
         Try
             Dim addr As String, outstr As String
             addr = ""
-            If TextBox3.Text < 10 Then
+            If TextBoxAddr.Text < 10 Then
                 addr = "0"
             End If
-            addr = addr & TextBox3.Text
+            addr = addr & TextBoxAddr.Text
             If SerialPort1.IsOpen Then
                 outstr = "@" & addr & " SA "
                 If txtNewAddr.Text < 10 Then
@@ -995,10 +995,10 @@ Partial Class Form1
                 If SorI = 3 Then SorI = 0
                 mystr = ""
                 'If Option1(2).Value = True Then
-                If TextBox3.Text < 10 Then
-                    mystr = "@0" & TextBox3.Text & " "
+                If TextBoxAddr.Text < 10 Then
+                    mystr = "@0" & TextBoxAddr.Text & " "
                 Else
-                    mystr = "@" & TextBox3.Text & " "
+                    mystr = "@" & TextBoxAddr.Text & " "
                 End If
                 'End If
                 Select Case SorI
@@ -1039,5 +1039,5 @@ Partial Class Form1
     Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         System.Diagnostics.Process.Start(LinkLabel1.Text)
     End Sub
-    Friend WithEvents Button13 As System.Windows.Forms.Button
+    Friend WithEvents ButtonOpenPort As System.Windows.Forms.Button
 End Class

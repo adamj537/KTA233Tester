@@ -44,55 +44,55 @@
                     j = 1
                     For i = 1 To 8
                         If (result And j) = j Then
-                            If i = 1 Then Form1.Button1.BackColor = Color.LawnGreen
-                            If i = 2 Then Form1.Button2.BackColor = Color.LawnGreen
-                            If i = 3 Then Form1.Button3.BackColor = Color.LawnGreen
-                            If i = 4 Then Form1.Button4.BackColor = Color.LawnGreen
-                            If i = 5 Then Form1.Button5.BackColor = Color.LawnGreen
-                            If i = 6 Then Form1.Button6.BackColor = Color.LawnGreen
-                            If i = 7 Then Form1.Button7.BackColor = Color.LawnGreen
-                            If i = 8 Then Form1.Button8.BackColor = Color.LawnGreen
-                            If i = 1 Then Form1.Button1.ForeColor = Color.Black
-                            If i = 2 Then Form1.Button2.ForeColor = Color.Black
-                            If i = 3 Then Form1.Button3.ForeColor = Color.Black
-                            If i = 4 Then Form1.Button4.ForeColor = Color.Black
-                            If i = 5 Then Form1.Button5.ForeColor = Color.Black
-                            If i = 6 Then Form1.Button6.ForeColor = Color.Black
-                            If i = 7 Then Form1.Button7.ForeColor = Color.Black
-                            If i = 8 Then Form1.Button8.ForeColor = Color.Black
+                            If i = 1 Then Form1.ButtonToggle1.BackColor = Color.LawnGreen
+                            If i = 2 Then Form1.ButtonToggle2.BackColor = Color.LawnGreen
+                            If i = 3 Then Form1.ButtonToggle3.BackColor = Color.LawnGreen
+                            If i = 4 Then Form1.ButtonToggle4.BackColor = Color.LawnGreen
+                            If i = 5 Then Form1.ButtonToggle5.BackColor = Color.LawnGreen
+                            If i = 6 Then Form1.ButtonToggle6.BackColor = Color.LawnGreen
+                            If i = 7 Then Form1.ButtonToggle7.BackColor = Color.LawnGreen
+                            If i = 8 Then Form1.ButtonToggle8.BackColor = Color.LawnGreen
+                            If i = 1 Then Form1.ButtonToggle1.ForeColor = Color.Black
+                            If i = 2 Then Form1.ButtonToggle2.ForeColor = Color.Black
+                            If i = 3 Then Form1.ButtonToggle3.ForeColor = Color.Black
+                            If i = 4 Then Form1.ButtonToggle4.ForeColor = Color.Black
+                            If i = 5 Then Form1.ButtonToggle5.ForeColor = Color.Black
+                            If i = 6 Then Form1.ButtonToggle6.ForeColor = Color.Black
+                            If i = 7 Then Form1.ButtonToggle7.ForeColor = Color.Black
+                            If i = 8 Then Form1.ButtonToggle8.ForeColor = Color.Black
                         Else
-                            If i = 1 Then Form1.Button1.BackColor = Color.Red
-                            If i = 2 Then Form1.Button2.BackColor = Color.Red
-                            If i = 3 Then Form1.Button3.BackColor = Color.Red
-                            If i = 4 Then Form1.Button4.BackColor = Color.Red
-                            If i = 5 Then Form1.Button5.BackColor = Color.Red
-                            If i = 6 Then Form1.Button6.BackColor = Color.Red
-                            If i = 7 Then Form1.Button7.BackColor = Color.Red
-                            If i = 8 Then Form1.Button8.BackColor = Color.Red
-                            If i = 1 Then Form1.Button1.ForeColor = Color.White
-                            If i = 2 Then Form1.Button2.ForeColor = Color.White
-                            If i = 3 Then Form1.Button3.ForeColor = Color.White
-                            If i = 4 Then Form1.Button4.ForeColor = Color.White
-                            If i = 5 Then Form1.Button5.ForeColor = Color.White
-                            If i = 6 Then Form1.Button6.ForeColor = Color.White
-                            If i = 7 Then Form1.Button7.ForeColor = Color.White
-                            If i = 8 Then Form1.Button8.ForeColor = Color.White
+                            If i = 1 Then Form1.ButtonToggle1.BackColor = Color.Red
+                            If i = 2 Then Form1.ButtonToggle2.BackColor = Color.Red
+                            If i = 3 Then Form1.ButtonToggle3.BackColor = Color.Red
+                            If i = 4 Then Form1.ButtonToggle4.BackColor = Color.Red
+                            If i = 5 Then Form1.ButtonToggle5.BackColor = Color.Red
+                            If i = 6 Then Form1.ButtonToggle6.BackColor = Color.Red
+                            If i = 7 Then Form1.ButtonToggle7.BackColor = Color.Red
+                            If i = 8 Then Form1.ButtonToggle8.BackColor = Color.Red
+                            If i = 1 Then Form1.ButtonToggle1.ForeColor = Color.White
+                            If i = 2 Then Form1.ButtonToggle2.ForeColor = Color.White
+                            If i = 3 Then Form1.ButtonToggle3.ForeColor = Color.White
+                            If i = 4 Then Form1.ButtonToggle4.ForeColor = Color.White
+                            If i = 5 Then Form1.ButtonToggle5.ForeColor = Color.White
+                            If i = 6 Then Form1.ButtonToggle6.ForeColor = Color.White
+                            If i = 7 Then Form1.ButtonToggle7.ForeColor = Color.White
+                            If i = 8 Then Form1.ButtonToggle8.ForeColor = Color.White
                         End If
                         j = j * 2
                     Next i
                     If result = 255 Then
-                        Form1.Button9.BackColor = Color.LawnGreen
-                        Form1.Button9.ForeColor = Color.Black
+                        Form1.ButtonAllOn.BackColor = Color.LawnGreen
+                        Form1.ButtonAllOn.ForeColor = Color.Black
                     Else
-                        Form1.Button9.BackColor = Color.Red
-                        Form1.Button9.ForeColor = Color.White
+                        Form1.ButtonAllOn.BackColor = Color.Red
+                        Form1.ButtonAllOn.ForeColor = Color.White
                     End If
                     If result = 0 Then
-                        Form1.Button10.BackColor = Color.LawnGreen
-                        Form1.Button10.ForeColor = Color.Black
+                        Form1.ButtonAllOff.BackColor = Color.LawnGreen
+                        Form1.ButtonAllOff.ForeColor = Color.Black
                     Else
-                        Form1.Button10.BackColor = Color.Red
-                        Form1.Button10.ForeColor = Color.White
+                        Form1.ButtonAllOff.BackColor = Color.Red
+                        Form1.ButtonAllOff.ForeColor = Color.White
                     End If
                 Case 1 'Input Status
                     result = Val(val1)
