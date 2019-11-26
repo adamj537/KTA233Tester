@@ -8,9 +8,9 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Digihelic Final Tester")> 
-<Assembly: AssemblyDescription("This program communicates with Arduino-based KTA-223 to control a Digihelic product and verify its functionality.")> 
-<Assembly: AssemblyCompany("Dwyer Instruments, Inc.")> 
+<Assembly: AssemblyTitle("KTA-223 Tester")>
+<Assembly: AssemblyDescription("This program communicates with Arduino-based KTA-223.")>
+<Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("WindowsApplication1")> 
 <Assembly: AssemblyCopyright("Copyright ©  2009")> 
 <Assembly: AssemblyTrademark("")> 
