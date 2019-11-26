@@ -656,7 +656,7 @@ Partial Class Form1
     Friend WithEvents ButtonBaud As System.Windows.Forms.Button
 
     Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonBaud.Click
-        Form2.Show()
+        FormBaud.Show()
 
     End Sub
 

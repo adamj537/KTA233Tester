@@ -19,8 +19,8 @@
     <OptionInfer>On</OptionInfer>
     <ManifestCertificateThumbprint>269B9D6D3E6D75445B31D23E5AF68E2E22112A75</ManifestCertificateThumbprint>
     <ManifestKeyFile>KTA-223 Tester_TemporaryKey.pfx</ManifestKeyFile>
-    <GenerateManifests>true</GenerateManifests>
-    <SignManifests>true</SignManifests>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <ApplicationIcon>USBRelay.ico</ApplicationIcon>
     <PublishUrl>publish\</PublishUrl>
@@ -62,6 +62,9 @@
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>Digihelic Final Tester.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -106,10 +109,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="FormBaud.designer.vb">
+      <DependentUpon>FormBaud.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="FormBaud.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -145,7 +148,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="KTA-223 Tester_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
