@@ -1,61 +1,99 @@
-// VBConversions Note: VB project level imports
-using System.Collections.Generic;
-using System;
-using System.Linq;
-using System.Drawing;
-using System.Diagnostics;
-using System.Data;
-using System.Xml.Linq;
-using Microsoft.VisualBasic;
-using System.Collections;
+﻿using System;
 using System.Windows.Forms;
-// End of VB project level imports
-
-using WindowsApplication1;
 
 namespace WindowsApplication1
 {
-	public partial class FormBaud
+	public partial class Form2 : Form
 	{
-		public FormBaud()
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		public Form2()
 		{
 			InitializeComponent();
-			
-			//Added to support default instance behavour in C#
-			if (defaultInstance == null)
-				defaultInstance = this;
 		}
-		
-#region Default Instance
-		
-		private static FormBaud defaultInstance;
-		
+
 		/// <summary>
-		/// Added by the VB.Net to C# Converter to support default instance behavour in C#
+		/// If the "OK" button is clicked, set the new baud rate.
 		/// </summary>
-		public static FormBaud Default
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void ButtonOk_Click(object sender, System.EventArgs e)
 		{
-			get
+			int mybaud = 0;
+			try
 			{
-				if (defaultInstance == null)
+				if (RadioButton1.Checked)
 				{
-					defaultInstance = new FormBaud();
-					defaultInstance.FormClosed += new System.Windows.Forms.FormClosedEventHandler(defaultInstance_FormClosed);
+					mybaud = Convert.ToInt32(RadioButton1.Text);
 				}
-				
-				return defaultInstance;
+				if (RadioButton2.Checked)
+				{
+					mybaud = Convert.ToInt32(RadioButton2.Text);
+				}
+				if (RadioButton3.Checked)
+				{
+					mybaud = Convert.ToInt32(RadioButton3.Text);
+				}
+				if (RadioButton4.Checked)
+				{
+					mybaud = Convert.ToInt32(RadioButton4.Text);
+				}
+				if (RadioButton5.Checked)
+				{
+					mybaud = Convert.ToInt32(RadioButton5.Text);
+				}
+				if (RadioButton6.Checked)
+				{
+					mybaud = Convert.ToInt32(RadioButton6.Text);
+				}
+				if (RadioButton7.Checked)
+				{
+					mybaud = Convert.ToInt32(RadioButton7.Text);
+				}
+				if (RadioButton8.Checked)
+				{
+					mybaud = Convert.ToInt32(RadioButton8.Text);
+				}
+				if (RadioButton9.Checked)
+				{
+					mybaud = Convert.ToInt32(RadioButton9.Text);
+				}
+				if (RadioButton10.Checked)
+				{
+					mybaud = Convert.ToInt32(RadioButton10.Text);
+				}
+
+				// If the serial port is open...
+				if (Form1.Default.SerialPort1.IsOpen)
+				{
+					// Close it.
+					Form1.Default.SerialPort1.Close();
+				}
+
+				// Set the new baud rate.
+				Form1.Default.SerialPort1.BaudRate = mybaud;
+
+				// Open the serial port again.
+				Form1.Default.SerialPort1.Open();
+
+				// Close the form.
+				Close();
 			}
-			set
+			catch (Exception)
 			{
-				defaultInstance = value;
+				MessageBox.Show("Error Opening " + Form1.Default.SerialPort1.PortName);
 			}
 		}
-		
-		static void defaultInstance_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
+
+		/// <summary>
+		/// If "Cancel" button is clicked, close the form without doing anything.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void ButtonCancel_Click(object sender, EventArgs e)
 		{
-			defaultInstance = null;
+			Close();
 		}
-		
-#endregion
 	}
 }

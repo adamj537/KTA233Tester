@@ -1,50 +1,36 @@
-// VBConversions Note: VB project level imports
-using System.Collections.Generic;
-using System;
-using System.Linq;
-using System.Drawing;
-using System.Diagnostics;
-using System.Data;
-using System.Xml.Linq;
-using Microsoft.VisualBasic;
-using System.Collections;
-using System.Windows.Forms;
-// End of VB project level imports
-
-using WindowsApplication1;
-
-namespace WindowsApplication1
+﻿namespace WindowsApplication1
 {
-	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated()]public 
-	partial class FormBaud : System.Windows.Forms.Form
+	partial class Form2
 	{
-		
-		//Form overrides dispose to clean up the component list.
-		[System.Diagnostics.DebuggerNonUserCode()]protected override void Dispose(bool disposing)  {
-			try
+		/// <summary>
+		/// Required designer variable.
+		/// </summary>
+		private System.ComponentModel.IContainer components = null;
+
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing && (components != null))
 			{
-				if (disposing && components != null)  {
-						components.Dispose();
-				}
+				components.Dispose();
 			}
-			finally
-			{
-				base.Dispose(disposing);
-			}
+			base.Dispose(disposing);
 		}
-		
-		//Required by the Windows Form Designer
-		private System.ComponentModel.Container components = null;
-		
-		//NOTE: The following procedure is required by the Windows Form Designer
-		//It can be modified using the Windows Form Designer.
-		//Do not modify it using the code editor.
-		[System.Diagnostics.DebuggerStepThrough()]private void InitializeComponent()  {
+
+		#region Windows Form Designer generated code
+
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
 			this.GroupBox1 = new System.Windows.Forms.GroupBox();
-			this.Button2 = new System.Windows.Forms.Button();
-			this.Button2.Click += new System.EventHandler(this.Button2_Click);
-			this.Button1 = new System.Windows.Forms.Button();
-			this.Button1.Click += new System.EventHandler(this.Button1_Click);
+			this.ButtonCancel = new System.Windows.Forms.Button();
+			this.ButtonOk = new System.Windows.Forms.Button();
 			this.RadioButton6 = new System.Windows.Forms.RadioButton();
 			this.RadioButton7 = new System.Windows.Forms.RadioButton();
 			this.RadioButton8 = new System.Windows.Forms.RadioButton();
@@ -57,11 +43,11 @@ namespace WindowsApplication1
 			this.RadioButton1 = new System.Windows.Forms.RadioButton();
 			this.GroupBox1.SuspendLayout();
 			this.SuspendLayout();
-			//
-			//GroupBox1
-			//
-			this.GroupBox1.Controls.Add(this.Button2);
-			this.GroupBox1.Controls.Add(this.Button1);
+			// 
+			// GroupBox1
+			// 
+			this.GroupBox1.Controls.Add(this.ButtonCancel);
+			this.GroupBox1.Controls.Add(this.ButtonOk);
 			this.GroupBox1.Controls.Add(this.RadioButton6);
 			this.GroupBox1.Controls.Add(this.RadioButton7);
 			this.GroupBox1.Controls.Add(this.RadioButton8);
@@ -75,30 +61,32 @@ namespace WindowsApplication1
 			this.GroupBox1.Location = new System.Drawing.Point(12, 12);
 			this.GroupBox1.Name = "GroupBox1";
 			this.GroupBox1.Size = new System.Drawing.Size(156, 184);
-			this.GroupBox1.TabIndex = 0;
+			this.GroupBox1.TabIndex = 1;
 			this.GroupBox1.TabStop = false;
 			this.GroupBox1.Text = "GroupBox1";
-			//
-			//Button2
-			//
-			this.Button2.Location = new System.Drawing.Point(88, 145);
-			this.Button2.Name = "Button2";
-			this.Button2.Size = new System.Drawing.Size(50, 24);
-			this.Button2.TabIndex = 11;
-			this.Button2.Text = "Cancel";
-			this.Button2.UseVisualStyleBackColor = true;
-			//
-			//Button1
-			//
-			this.Button1.Location = new System.Drawing.Point(21, 145);
-			this.Button1.Name = "Button1";
-			this.Button1.Size = new System.Drawing.Size(50, 24);
-			this.Button1.TabIndex = 10;
-			this.Button1.Text = "OK";
-			this.Button1.UseVisualStyleBackColor = true;
-			//
-			//RadioButton6
-			//
+			// 
+			// ButtonCancel
+			// 
+			this.ButtonCancel.Location = new System.Drawing.Point(88, 145);
+			this.ButtonCancel.Name = "ButtonCancel";
+			this.ButtonCancel.Size = new System.Drawing.Size(50, 24);
+			this.ButtonCancel.TabIndex = 11;
+			this.ButtonCancel.Text = "Cancel";
+			this.ButtonCancel.UseVisualStyleBackColor = true;
+			this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
+			// 
+			// ButtonOk
+			// 
+			this.ButtonOk.Location = new System.Drawing.Point(21, 145);
+			this.ButtonOk.Name = "ButtonOk";
+			this.ButtonOk.Size = new System.Drawing.Size(50, 24);
+			this.ButtonOk.TabIndex = 10;
+			this.ButtonOk.Text = "OK";
+			this.ButtonOk.UseVisualStyleBackColor = true;
+			this.ButtonOk.Click += new System.EventHandler(this.ButtonOk_Click);
+			// 
+			// RadioButton6
+			// 
 			this.RadioButton6.AutoSize = true;
 			this.RadioButton6.Location = new System.Drawing.Point(83, 122);
 			this.RadioButton6.Name = "RadioButton6";
@@ -106,9 +94,9 @@ namespace WindowsApplication1
 			this.RadioButton6.TabIndex = 9;
 			this.RadioButton6.Text = "115200";
 			this.RadioButton6.UseVisualStyleBackColor = true;
-			//
-			//RadioButton7
-			//
+			// 
+			// RadioButton7
+			// 
 			this.RadioButton7.AutoSize = true;
 			this.RadioButton7.Location = new System.Drawing.Point(83, 99);
 			this.RadioButton7.Name = "RadioButton7";
@@ -116,9 +104,9 @@ namespace WindowsApplication1
 			this.RadioButton7.TabIndex = 8;
 			this.RadioButton7.Text = "57600";
 			this.RadioButton7.UseVisualStyleBackColor = true;
-			//
-			//RadioButton8
-			//
+			// 
+			// RadioButton8
+			// 
 			this.RadioButton8.AutoSize = true;
 			this.RadioButton8.Location = new System.Drawing.Point(83, 76);
 			this.RadioButton8.Name = "RadioButton8";
@@ -126,9 +114,9 @@ namespace WindowsApplication1
 			this.RadioButton8.TabIndex = 7;
 			this.RadioButton8.Text = "38400";
 			this.RadioButton8.UseVisualStyleBackColor = true;
-			//
-			//RadioButton9
-			//
+			// 
+			// RadioButton9
+			// 
 			this.RadioButton9.AutoSize = true;
 			this.RadioButton9.Location = new System.Drawing.Point(83, 53);
 			this.RadioButton9.Name = "RadioButton9";
@@ -136,9 +124,9 @@ namespace WindowsApplication1
 			this.RadioButton9.TabIndex = 6;
 			this.RadioButton9.Text = "28800";
 			this.RadioButton9.UseVisualStyleBackColor = true;
-			//
-			//RadioButton10
-			//
+			// 
+			// RadioButton10
+			// 
 			this.RadioButton10.AutoSize = true;
 			this.RadioButton10.Location = new System.Drawing.Point(83, 30);
 			this.RadioButton10.Name = "RadioButton10";
@@ -146,9 +134,9 @@ namespace WindowsApplication1
 			this.RadioButton10.TabIndex = 5;
 			this.RadioButton10.Text = "19200";
 			this.RadioButton10.UseVisualStyleBackColor = true;
-			//
-			//RadioButton5
-			//
+			// 
+			// RadioButton5
+			// 
 			this.RadioButton5.AutoSize = true;
 			this.RadioButton5.Location = new System.Drawing.Point(16, 122);
 			this.RadioButton5.Name = "RadioButton5";
@@ -156,9 +144,9 @@ namespace WindowsApplication1
 			this.RadioButton5.TabIndex = 4;
 			this.RadioButton5.Text = "14400";
 			this.RadioButton5.UseVisualStyleBackColor = true;
-			//
-			//RadioButton4
-			//
+			// 
+			// RadioButton4
+			// 
 			this.RadioButton4.AutoSize = true;
 			this.RadioButton4.Location = new System.Drawing.Point(16, 99);
 			this.RadioButton4.Name = "RadioButton4";
@@ -166,9 +154,9 @@ namespace WindowsApplication1
 			this.RadioButton4.TabIndex = 3;
 			this.RadioButton4.Text = "9600";
 			this.RadioButton4.UseVisualStyleBackColor = true;
-			//
-			//RadioButton3
-			//
+			// 
+			// RadioButton3
+			// 
 			this.RadioButton3.AutoSize = true;
 			this.RadioButton3.Location = new System.Drawing.Point(16, 76);
 			this.RadioButton3.Name = "RadioButton3";
@@ -176,9 +164,9 @@ namespace WindowsApplication1
 			this.RadioButton3.TabIndex = 2;
 			this.RadioButton3.Text = "4800";
 			this.RadioButton3.UseVisualStyleBackColor = true;
-			//
-			//RadioButton2
-			//
+			// 
+			// RadioButton2
+			// 
 			this.RadioButton2.AutoSize = true;
 			this.RadioButton2.Location = new System.Drawing.Point(16, 53);
 			this.RadioButton2.Name = "RadioButton2";
@@ -186,9 +174,9 @@ namespace WindowsApplication1
 			this.RadioButton2.TabIndex = 1;
 			this.RadioButton2.Text = "2400";
 			this.RadioButton2.UseVisualStyleBackColor = true;
-			//
-			//RadioButton1
-			//
+			// 
+			// RadioButton1
+			// 
 			this.RadioButton1.AutoSize = true;
 			this.RadioButton1.Location = new System.Drawing.Point(16, 30);
 			this.RadioButton1.Name = "RadioButton1";
@@ -196,10 +184,10 @@ namespace WindowsApplication1
 			this.RadioButton1.TabIndex = 0;
 			this.RadioButton1.Text = "1200";
 			this.RadioButton1.UseVisualStyleBackColor = true;
-			//
-			//Form2
-			//
-			this.AutoScaleDimensions = new System.Drawing.SizeF((float) (6.0F), (float) (13.0F));
+			// 
+			// Form2
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(181, 209);
 			this.Controls.Add(this.GroupBox1);
@@ -208,9 +196,14 @@ namespace WindowsApplication1
 			this.GroupBox1.ResumeLayout(false);
 			this.GroupBox1.PerformLayout();
 			this.ResumeLayout(false);
-			
+
 		}
+
+		#endregion
+
 		internal System.Windows.Forms.GroupBox GroupBox1;
+		internal System.Windows.Forms.Button ButtonCancel;
+		internal System.Windows.Forms.Button ButtonOk;
 		internal System.Windows.Forms.RadioButton RadioButton6;
 		internal System.Windows.Forms.RadioButton RadioButton7;
 		internal System.Windows.Forms.RadioButton RadioButton8;
@@ -221,74 +214,5 @@ namespace WindowsApplication1
 		internal System.Windows.Forms.RadioButton RadioButton3;
 		internal System.Windows.Forms.RadioButton RadioButton2;
 		internal System.Windows.Forms.RadioButton RadioButton1;
-		internal System.Windows.Forms.Button Button2;
-		internal System.Windows.Forms.Button Button1;
-		
-		private void Button1_Click(System.Object sender, System.EventArgs e)
-		{
-			int mybaud = 0;
-			try
-			{
-				if (RadioButton1.Checked)
-				{
-					mybaud = System.Convert.ToInt32(Conversion.Val(RadioButton1.Text));
-				}
-				if (RadioButton2.Checked)
-				{
-					mybaud = System.Convert.ToInt32(Conversion.Val(RadioButton2.Text));
-				}
-				if (RadioButton3.Checked)
-				{
-					mybaud = System.Convert.ToInt32(Conversion.Val(RadioButton3.Text));
-				}
-				if (RadioButton4.Checked)
-				{
-					mybaud = System.Convert.ToInt32(Conversion.Val(RadioButton4.Text));
-				}
-				if (RadioButton5.Checked)
-				{
-					mybaud = System.Convert.ToInt32(Conversion.Val(RadioButton5.Text));
-				}
-				if (RadioButton6.Checked)
-				{
-					mybaud = System.Convert.ToInt32(Conversion.Val(RadioButton6.Text));
-				}
-				if (RadioButton7.Checked)
-				{
-					mybaud = System.Convert.ToInt32(Conversion.Val(RadioButton7.Text));
-				}
-				if (RadioButton8.Checked)
-				{
-					mybaud = System.Convert.ToInt32(Conversion.Val(RadioButton8.Text));
-				}
-				if (RadioButton9.Checked)
-				{
-					mybaud = System.Convert.ToInt32(Conversion.Val(RadioButton9.Text));
-				}
-				if (RadioButton10.Checked)
-				{
-					mybaud = System.Convert.ToInt32(Conversion.Val(RadioButton10.Text));
-				}
-				if (Form1.Default.SerialPort1.IsOpen)
-				{
-					Form1.Default.SerialPort1.Close();
-				}
-				Form1.Default.SerialPort1.BaudRate = mybaud;
-				Form1.Default.SerialPort1.Open();
-				this.Close();
-			}
-			catch (Exception)
-			{
-				MessageBox.Show("Error Opening " + Form1.Default.SerialPort1.PortName);
-			}
-		}
-		
-		private void Button2_Click(System.Object sender, System.EventArgs e)
-		{
-			this.Close();
-			
-			
-		}
 	}
-	
 }
