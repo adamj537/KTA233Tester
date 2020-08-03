@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "KTA-223 Tester", "KTA-223 Tester\KTA-223 Tester.vbproj", "{7376A1AB-81B8-4EB3-92AC-B0EE9848170C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTA-223 Tester", "KTA-223 Tester\KTA-223 Tester.csproj", "{7376A1AB-81B8-4EB3-92AC-B0EE9848170C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABD6D47B-2C98-4F6C-9053-EF0DD3BBAD04}
 	EndGlobalSection
 EndGlobal
