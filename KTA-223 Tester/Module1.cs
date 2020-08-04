@@ -268,7 +268,7 @@ namespace WindowsApplication1
 						j *= 2;
 					}
 				} //Analog Input
-				else if (SorI == ((byte)2))
+				else if (SorI == 2)
 				{
 					res[0] = (float)(Conversion.Val(val1));
 					res[1] = (float)(Conversion.Val(val2));
