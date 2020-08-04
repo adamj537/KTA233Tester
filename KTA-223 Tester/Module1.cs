@@ -1,17 +1,5 @@
-// VBConversions Note: VB project level imports
-using System.Collections.Generic;
-using System;
-using System.Linq;
 using System.Drawing;
-using System.Diagnostics;
-using System.Data;
-using System.Xml.Linq;
 using Microsoft.VisualBasic;
-using System.Collections;
-using System.Windows.Forms;
-// End of VB project level imports
-
-using WindowsApplication1;
 
 namespace WindowsApplication1
 {
@@ -21,17 +9,12 @@ namespace WindowsApplication1
 		
 		public static byte SorI;
 		//Declare Sub monitor(ByVal rxstr As String)
-		public static void monitor(string rxstr)
+		public static void Monitor(string rxstr)
 		{
-			int i = 0;
-			int j = 0;
-			int result = 0;
-			string val1 = "";
-			string val2 = "";
-			string val3 = "";
 			float[] res = new float[3];
 			bool parse = false;
-			
+
+			string val1;
 			//Text1.Text = rxstr
 			if (rxstr.IndexOf(" ") + 1 != 0)
 			{
@@ -44,6 +27,7 @@ namespace WindowsApplication1
 				val1 = "";
 				//Text2.Text = "none"
 			}
+			string val2;
 			if (val1.IndexOf(" ") + 1 != 0)
 			{
 				val2 = val1.Substring(val1.Length - (val1.Length - (val1.IndexOf(" ") + 1)), val1.Length - (val1.IndexOf(" ") + 1));
@@ -56,6 +40,7 @@ namespace WindowsApplication1
 				val2 = "";
 				//Text3.Text = "none"
 			}
+			string val3;
 			if (val2.IndexOf(" ") + 1 != 0)
 			{
 				val3 = val2.Substring(val2.Length - (val2.Length - (val2.IndexOf(" ") + 1)), val2.Length - (val2.IndexOf(" ") + 1)) + " ";
@@ -70,7 +55,10 @@ namespace WindowsApplication1
 			}
 			if (parse == true)
 			{
-				if (SorI == ((byte) 0)) //Relay Status
+				int i;
+				int j;
+				int result;
+				if (SorI == 0) //Relay Status
 				{
 					result = System.Convert.ToInt32(Conversion.Val(val1));
 					j = 1;
@@ -210,7 +198,7 @@ namespace WindowsApplication1
 								Form1.Default.ButtonToggle8.ForeColor = Color.White;
 							}
 						}
-						j = j * 2;
+						j *= 2;
 					}
 					if (result == 255)
 					{
@@ -233,7 +221,7 @@ namespace WindowsApplication1
 						Form1.Default.ButtonAllOff.ForeColor = Color.White;
 					}
 				} //Input Status
-				else if (SorI == ((byte) 1))
+				else if (SorI == 1)
 				{
 					result = System.Convert.ToInt32(Conversion.Val(val1));
 					j = 1;
@@ -277,29 +265,28 @@ namespace WindowsApplication1
 								Form1.Default.Panel4.BackColor = Color.Red;
 							}
 						}
-						j = j * 2;
+						j *= 2;
 					}
 				} //Analog Input
-				else if (SorI == ((byte) 2))
+				else if (SorI == ((byte)2))
 				{
-					res[0] = (float) (Conversion.Val(val1));
-					res[1] = (float) (Conversion.Val(val2));
-					res[2] = (float) (Conversion.Val(val3));
+					res[0] = (float)(Conversion.Val(val1));
+					res[1] = (float)(Conversion.Val(val2));
+					res[2] = (float)(Conversion.Val(val3));
 					Form1.Default.Label4.Text = System.Convert.ToString(Conversion.Val(val1));
 					Form1.Default.Label5.Text = System.Convert.ToString(Conversion.Val(val2));
 					Form1.Default.Label6.Text = System.Convert.ToString(Conversion.Val(val3));
-					j = 1;
 					Form1.Default.ProgressBar1.Value = System.Convert.ToInt32(Conversion.Val(val1));
 					Form1.Default.ProgressBar2.Value = System.Convert.ToInt32(Conversion.Val(val2));
 					Form1.Default.ProgressBar3.Value = System.Convert.ToInt32(Conversion.Val(val3));
-					
+
 					//For i = 0 To 2
 					//Shape4(i).FillColor = vbGreen
 					//Shape4(i).Width = res(i) / 1023 * Shape3(i).Width
 					//Next i
 				}
-				
-				
+
+
 			}
 			
 		}

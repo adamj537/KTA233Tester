@@ -3,12 +3,12 @@ using System.Windows.Forms;
 
 namespace WindowsApplication1
 {
-	public partial class Form2 : Form
+	public partial class FormBaud : Form
 	{
 		/// <summary>
 		/// Constructor
 		/// </summary>
-		public Form2()
+		public FormBaud()
 		{
 			InitializeComponent();
 		}
@@ -18,7 +18,7 @@ namespace WindowsApplication1
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
-		private void ButtonOk_Click(object sender, System.EventArgs e)
+		private void ButtonOk_Click(object sender, EventArgs e)
 		{
 			int mybaud = 0;
 			try

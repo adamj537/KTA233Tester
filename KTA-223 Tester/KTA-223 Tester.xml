@@ -9,9 +9,40 @@
             Added by the VB.Net to C# Converter to support default instance behavour in C#
             </summary>
         </member>
-        <member name="P:WindowsApplication1.FormBaud.Default">
+        <member name="M:WindowsApplication1.FormBaud.#ctor">
             <summary>
-            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WindowsApplication1.FormBaud.ButtonOk_Click(System.Object,System.EventArgs)">
+            <summary>
+            If the "OK" button is clicked, set the new baud rate.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WindowsApplication1.FormBaud.ButtonCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            If "Cancel" button is clicked, close the form without doing anything.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:WindowsApplication1.FormBaud.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WindowsApplication1.FormBaud.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WindowsApplication1.FormBaud.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
             </summary>
         </member>
         <member name="T:My.Resources.Resources">

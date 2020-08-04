@@ -1,21 +1,8 @@
-// VBConversions Note: VB project level imports
-using System.Collections.Generic;
 using System;
-using System.Linq;
-using System.Drawing;
-using System.Diagnostics;
-using System.Data;
-using System.Xml.Linq;
-using Microsoft.VisualBasic;
-using System.Collections;
 using System.Windows.Forms;
-// End of VB project level imports
-
-using WindowsApplication1;
 
 namespace WindowsApplication1
 {
-	
 	public partial class Form1
 	{
 		public Form1()
@@ -41,7 +28,7 @@ namespace WindowsApplication1
 				if (defaultInstance == null)
 				{
 					defaultInstance = new Form1();
-					defaultInstance.FormClosed += new System.Windows.Forms.FormClosedEventHandler(defaultInstance_FormClosed);
+					defaultInstance.FormClosed += new FormClosedEventHandler(defaultInstance_FormClosed);
 				}
 				
 				return defaultInstance;
@@ -52,7 +39,7 @@ namespace WindowsApplication1
 			}
 		}
 		
-		static void defaultInstance_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
+		static void defaultInstance_FormClosed(object sender, FormClosedEventArgs e)
 		{
 			defaultInstance = null;
 		}

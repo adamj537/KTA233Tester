@@ -7,7 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{7376A1AB-81B8-4EB3-92AC-B0EE9848170C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <StartupObject>
+    </StartupObject>
     <RootNamespace>WindowsApplication1</RootNamespace>
     <AssemblyName>KTA-223 Tester</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -98,11 +99,11 @@
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBaud.designer.cs">
-      <DependentUpon>FormBaud.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormBaud.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaud.Designer.cs">
+      <DependentUpon>FormBaud.cs</DependentUpon>
     </Compile>
     <Compile Include="Module1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,6 +126,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaud.resx">
+      <DependentUpon>FormBaud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

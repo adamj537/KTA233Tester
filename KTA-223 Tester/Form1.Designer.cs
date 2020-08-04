@@ -1,17 +1,7 @@
-// VBConversions Note: VB project level imports
-using System.Collections.Generic;
 using System;
-using System.Linq;
 using System.Drawing;
-using System.Diagnostics;
-using System.Data;
-using System.Xml.Linq;
-using Microsoft.VisualBasic;
-using System.Collections;
 using System.Windows.Forms;
-// End of VB project level imports
-
-using WindowsApplication1;
+using Microsoft.VisualBasic;
 
 namespace WindowsApplication1
 {
@@ -682,8 +672,8 @@ namespace WindowsApplication1
 		
 		private void Button12_Click(System.Object sender, System.EventArgs e)
 		{
-			FormBaud.Default.Show();
-			
+			FormBaud formBaud = new FormBaud();
+			formBaud.Show();
 		}
 		
 		private void TextBox2_TextChanged(System.Object sender, System.EventArgs e)
@@ -722,7 +712,7 @@ namespace WindowsApplication1
 						{
 							if (char.Parse(mychar) == '\r' || char.Parse(mychar) == '\n')
 							{
-								Module1.monitor(txtRX.Text);
+								Module1.Monitor(txtRX.Text);
 								//rxOn = False
 								Module1.txNext = true;
 							}

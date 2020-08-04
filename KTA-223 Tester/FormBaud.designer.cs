@@ -1,6 +1,6 @@
 ﻿namespace WindowsApplication1
 {
-	partial class Form2
+	partial class FormBaud
 	{
 		/// <summary>
 		/// Required designer variable.
