@@ -1,7 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
-namespace WindowsApplication1
+namespace WindowsFormsApp1
 {
 	public partial class FormBaud : Form
 	{
@@ -10,7 +11,17 @@ namespace WindowsApplication1
 		/// </summary>
 		public FormBaud()
 		{
+			// Initialize the form.
 			InitializeComponent();
+
+			// Select the current baud rate.
+			foreach (RadioButton r in tableLayoutPanelBaud.Controls.OfType<RadioButton>())
+			{
+				if (Properties.Settings.Default.Baud == Convert.ToUInt32(r.Text))
+				{
+					r.Checked = true;
+				}
+			}
 		}
 
 		/// <summary>
@@ -20,70 +31,17 @@ namespace WindowsApplication1
 		/// <param name="e"></param>
 		private void ButtonOk_Click(object sender, EventArgs e)
 		{
-			int mybaud = 0;
-			try
+			// Save new baud rate setting.
+			foreach (RadioButton r in tableLayoutPanelBaud.Controls.OfType<RadioButton>())
 			{
-				if (RadioButton1.Checked)
+				if (r.Checked)
 				{
-					mybaud = Convert.ToInt32(RadioButton1.Text);
+					Properties.Settings.Default.Baud = Convert.ToUInt32(r.Text);
 				}
-				if (RadioButton2.Checked)
-				{
-					mybaud = Convert.ToInt32(RadioButton2.Text);
-				}
-				if (RadioButton3.Checked)
-				{
-					mybaud = Convert.ToInt32(RadioButton3.Text);
-				}
-				if (RadioButton4.Checked)
-				{
-					mybaud = Convert.ToInt32(RadioButton4.Text);
-				}
-				if (RadioButton5.Checked)
-				{
-					mybaud = Convert.ToInt32(RadioButton5.Text);
-				}
-				if (RadioButton6.Checked)
-				{
-					mybaud = Convert.ToInt32(RadioButton6.Text);
-				}
-				if (RadioButton7.Checked)
-				{
-					mybaud = Convert.ToInt32(RadioButton7.Text);
-				}
-				if (RadioButton8.Checked)
-				{
-					mybaud = Convert.ToInt32(RadioButton8.Text);
-				}
-				if (RadioButton9.Checked)
-				{
-					mybaud = Convert.ToInt32(RadioButton9.Text);
-				}
-				if (RadioButton10.Checked)
-				{
-					mybaud = Convert.ToInt32(RadioButton10.Text);
-				}
-
-				// If the serial port is open...
-				if (FormMain.Default.SerialPort1.IsOpen)
-				{
-					// Close it.
-					FormMain.Default.SerialPort1.Close();
-				}
-
-				// Set the new baud rate.
-				FormMain.Default.SerialPort1.BaudRate = mybaud;
-
-				// Open the serial port again.
-				FormMain.Default.SerialPort1.Open();
-
-				// Close the form.
-				Close();
 			}
-			catch (Exception)
-			{
-				MessageBox.Show("Error Opening " + FormMain.Default.SerialPort1.PortName);
-			}
+
+			// Close the form.
+			Close();
 		}
 
 		/// <summary>
@@ -93,6 +51,7 @@ namespace WindowsApplication1
 		/// <param name="e"></param>
 		private void ButtonCancel_Click(object sender, EventArgs e)
 		{
+			// Close the form.
 			Close();
 		}
 	}

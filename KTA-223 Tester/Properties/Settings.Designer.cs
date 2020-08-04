@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace My {
+namespace WindowsFormsApp1.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,10 +25,10 @@ namespace My {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1")]
-        public int Port {
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public uint Port {
             get {
-                return ((int)(this["Port"]));
+                return ((uint)(this["Port"]));
             }
             set {
                 this["Port"] = value;
@@ -38,9 +38,9 @@ namespace My {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("9600")]
-        public int Baud {
+        public uint Baud {
             get {
-                return ((int)(this["Baud"]));
+                return ((uint)(this["Baud"]));
             }
             set {
                 this["Baud"] = value;
