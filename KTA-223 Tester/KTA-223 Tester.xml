@@ -4,7 +4,7 @@
         <name>KTA-223 Tester</name>
     </assembly>
     <members>
-        <member name="P:WindowsApplication1.Form1.Default">
+        <member name="P:WindowsApplication1.FormMain.Default">
             <summary>
             Added by the VB.Net to C# Converter to support default instance behavour in C#
             </summary>

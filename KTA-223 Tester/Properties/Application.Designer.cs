@@ -54,7 +54,7 @@ namespace WindowsApplication1
 			}
 			
 			[global::System.Diagnostics.DebuggerStepThroughAttribute()]protected override void OnCreateMainForm()  {
-				this.MainForm = global::WindowsApplication1.Form1.Default;
+				this.MainForm = global::WindowsApplication1.FormMain.Default;
 			}
 		}
 	}

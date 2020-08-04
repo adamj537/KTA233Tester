@@ -6,7 +6,7 @@ using Microsoft.VisualBasic;
 namespace WindowsApplication1
 {
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated()]public 
-	partial class Form1 : System.Windows.Forms.Form
+	partial class FormMain : System.Windows.Forms.Form
 	{
 		
 		//Form overrides dispose to clean up the component list.
@@ -32,7 +32,7 @@ namespace WindowsApplication1
 		[System.Diagnostics.DebuggerStepThrough()]private void InitializeComponent()  {
 			this.components = new System.ComponentModel.Container();
 			base.Load += new System.EventHandler(Form1_Load);
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
 			this.SerialPort1 = new System.IO.Ports.SerialPort(this.components);
 			this.Timer1 = new System.Windows.Forms.Timer(this.components);
 			this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);

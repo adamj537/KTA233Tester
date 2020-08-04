@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace WindowsApplication1
 {
-	public partial class Form1
+	public partial class FormMain
 	{
-		public Form1()
+		public FormMain()
 		{
 			InitializeComponent();
 			
@@ -16,18 +16,18 @@ namespace WindowsApplication1
 		
 #region Default Instance
 		
-		private static Form1 defaultInstance;
+		private static FormMain defaultInstance;
 		
 		/// <summary>
 		/// Added by the VB.Net to C# Converter to support default instance behavour in C#
 		/// </summary>
-		public static Form1 Default
+		public static FormMain Default
 		{
 			get
 			{
 				if (defaultInstance == null)
 				{
-					defaultInstance = new Form1();
+					defaultInstance = new FormMain();
 					defaultInstance.FormClosed += new FormClosedEventHandler(defaultInstance_FormClosed);
 				}
 				

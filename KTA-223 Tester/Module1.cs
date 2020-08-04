@@ -68,157 +68,157 @@ namespace WindowsApplication1
 						{
 							if (i == 1)
 							{
-								Form1.Default.ButtonToggle1.BackColor = Color.LawnGreen;
+								FormMain.Default.ButtonToggle1.BackColor = Color.LawnGreen;
 							}
 							if (i == 2)
 							{
-								Form1.Default.ButtonToggle2.BackColor = Color.LawnGreen;
+								FormMain.Default.ButtonToggle2.BackColor = Color.LawnGreen;
 							}
 							if (i == 3)
 							{
-								Form1.Default.ButtonToggle3.BackColor = Color.LawnGreen;
+								FormMain.Default.ButtonToggle3.BackColor = Color.LawnGreen;
 							}
 							if (i == 4)
 							{
-								Form1.Default.ButtonToggle4.BackColor = Color.LawnGreen;
+								FormMain.Default.ButtonToggle4.BackColor = Color.LawnGreen;
 							}
 							if (i == 5)
 							{
-								Form1.Default.ButtonToggle5.BackColor = Color.LawnGreen;
+								FormMain.Default.ButtonToggle5.BackColor = Color.LawnGreen;
 							}
 							if (i == 6)
 							{
-								Form1.Default.ButtonToggle6.BackColor = Color.LawnGreen;
+								FormMain.Default.ButtonToggle6.BackColor = Color.LawnGreen;
 							}
 							if (i == 7)
 							{
-								Form1.Default.ButtonToggle7.BackColor = Color.LawnGreen;
+								FormMain.Default.ButtonToggle7.BackColor = Color.LawnGreen;
 							}
 							if (i == 8)
 							{
-								Form1.Default.ButtonToggle8.BackColor = Color.LawnGreen;
+								FormMain.Default.ButtonToggle8.BackColor = Color.LawnGreen;
 							}
 							if (i == 1)
 							{
-								Form1.Default.ButtonToggle1.ForeColor = Color.Black;
+								FormMain.Default.ButtonToggle1.ForeColor = Color.Black;
 							}
 							if (i == 2)
 							{
-								Form1.Default.ButtonToggle2.ForeColor = Color.Black;
+								FormMain.Default.ButtonToggle2.ForeColor = Color.Black;
 							}
 							if (i == 3)
 							{
-								Form1.Default.ButtonToggle3.ForeColor = Color.Black;
+								FormMain.Default.ButtonToggle3.ForeColor = Color.Black;
 							}
 							if (i == 4)
 							{
-								Form1.Default.ButtonToggle4.ForeColor = Color.Black;
+								FormMain.Default.ButtonToggle4.ForeColor = Color.Black;
 							}
 							if (i == 5)
 							{
-								Form1.Default.ButtonToggle5.ForeColor = Color.Black;
+								FormMain.Default.ButtonToggle5.ForeColor = Color.Black;
 							}
 							if (i == 6)
 							{
-								Form1.Default.ButtonToggle6.ForeColor = Color.Black;
+								FormMain.Default.ButtonToggle6.ForeColor = Color.Black;
 							}
 							if (i == 7)
 							{
-								Form1.Default.ButtonToggle7.ForeColor = Color.Black;
+								FormMain.Default.ButtonToggle7.ForeColor = Color.Black;
 							}
 							if (i == 8)
 							{
-								Form1.Default.ButtonToggle8.ForeColor = Color.Black;
+								FormMain.Default.ButtonToggle8.ForeColor = Color.Black;
 							}
 						}
 						else
 						{
 							if (i == 1)
 							{
-								Form1.Default.ButtonToggle1.BackColor = Color.Red;
+								FormMain.Default.ButtonToggle1.BackColor = Color.Red;
 							}
 							if (i == 2)
 							{
-								Form1.Default.ButtonToggle2.BackColor = Color.Red;
+								FormMain.Default.ButtonToggle2.BackColor = Color.Red;
 							}
 							if (i == 3)
 							{
-								Form1.Default.ButtonToggle3.BackColor = Color.Red;
+								FormMain.Default.ButtonToggle3.BackColor = Color.Red;
 							}
 							if (i == 4)
 							{
-								Form1.Default.ButtonToggle4.BackColor = Color.Red;
+								FormMain.Default.ButtonToggle4.BackColor = Color.Red;
 							}
 							if (i == 5)
 							{
-								Form1.Default.ButtonToggle5.BackColor = Color.Red;
+								FormMain.Default.ButtonToggle5.BackColor = Color.Red;
 							}
 							if (i == 6)
 							{
-								Form1.Default.ButtonToggle6.BackColor = Color.Red;
+								FormMain.Default.ButtonToggle6.BackColor = Color.Red;
 							}
 							if (i == 7)
 							{
-								Form1.Default.ButtonToggle7.BackColor = Color.Red;
+								FormMain.Default.ButtonToggle7.BackColor = Color.Red;
 							}
 							if (i == 8)
 							{
-								Form1.Default.ButtonToggle8.BackColor = Color.Red;
+								FormMain.Default.ButtonToggle8.BackColor = Color.Red;
 							}
 							if (i == 1)
 							{
-								Form1.Default.ButtonToggle1.ForeColor = Color.White;
+								FormMain.Default.ButtonToggle1.ForeColor = Color.White;
 							}
 							if (i == 2)
 							{
-								Form1.Default.ButtonToggle2.ForeColor = Color.White;
+								FormMain.Default.ButtonToggle2.ForeColor = Color.White;
 							}
 							if (i == 3)
 							{
-								Form1.Default.ButtonToggle3.ForeColor = Color.White;
+								FormMain.Default.ButtonToggle3.ForeColor = Color.White;
 							}
 							if (i == 4)
 							{
-								Form1.Default.ButtonToggle4.ForeColor = Color.White;
+								FormMain.Default.ButtonToggle4.ForeColor = Color.White;
 							}
 							if (i == 5)
 							{
-								Form1.Default.ButtonToggle5.ForeColor = Color.White;
+								FormMain.Default.ButtonToggle5.ForeColor = Color.White;
 							}
 							if (i == 6)
 							{
-								Form1.Default.ButtonToggle6.ForeColor = Color.White;
+								FormMain.Default.ButtonToggle6.ForeColor = Color.White;
 							}
 							if (i == 7)
 							{
-								Form1.Default.ButtonToggle7.ForeColor = Color.White;
+								FormMain.Default.ButtonToggle7.ForeColor = Color.White;
 							}
 							if (i == 8)
 							{
-								Form1.Default.ButtonToggle8.ForeColor = Color.White;
+								FormMain.Default.ButtonToggle8.ForeColor = Color.White;
 							}
 						}
 						j *= 2;
 					}
 					if (result == 255)
 					{
-						Form1.Default.ButtonAllOn.BackColor = Color.LawnGreen;
-						Form1.Default.ButtonAllOn.ForeColor = Color.Black;
+						FormMain.Default.ButtonAllOn.BackColor = Color.LawnGreen;
+						FormMain.Default.ButtonAllOn.ForeColor = Color.Black;
 					}
 					else
 					{
-						Form1.Default.ButtonAllOn.BackColor = Color.Red;
-						Form1.Default.ButtonAllOn.ForeColor = Color.White;
+						FormMain.Default.ButtonAllOn.BackColor = Color.Red;
+						FormMain.Default.ButtonAllOn.ForeColor = Color.White;
 					}
 					if (result == 0)
 					{
-						Form1.Default.ButtonAllOff.BackColor = Color.LawnGreen;
-						Form1.Default.ButtonAllOff.ForeColor = Color.Black;
+						FormMain.Default.ButtonAllOff.BackColor = Color.LawnGreen;
+						FormMain.Default.ButtonAllOff.ForeColor = Color.Black;
 					}
 					else
 					{
-						Form1.Default.ButtonAllOff.BackColor = Color.Red;
-						Form1.Default.ButtonAllOff.ForeColor = Color.White;
+						FormMain.Default.ButtonAllOff.BackColor = Color.Red;
+						FormMain.Default.ButtonAllOff.ForeColor = Color.White;
 					}
 				} //Input Status
 				else if (SorI == 1)
@@ -231,38 +231,38 @@ namespace WindowsApplication1
 						{
 							if (i == 1)
 							{
-								Form1.Default.Panel1.BackColor = Color.LawnGreen;
+								FormMain.Default.Panel1.BackColor = Color.LawnGreen;
 							}
 							if (i == 2)
 							{
-								Form1.Default.Panel2.BackColor = Color.LawnGreen;
+								FormMain.Default.Panel2.BackColor = Color.LawnGreen;
 							}
 							if (i == 3)
 							{
-								Form1.Default.Panel3.BackColor = Color.LawnGreen;
+								FormMain.Default.Panel3.BackColor = Color.LawnGreen;
 							}
 							if (i == 4)
 							{
-								Form1.Default.Panel4.BackColor = Color.LawnGreen;
+								FormMain.Default.Panel4.BackColor = Color.LawnGreen;
 							}
 						}
 						else
 						{
 							if (i == 1)
 							{
-								Form1.Default.Panel1.BackColor = Color.Red;
+								FormMain.Default.Panel1.BackColor = Color.Red;
 							}
 							if (i == 2)
 							{
-								Form1.Default.Panel2.BackColor = Color.Red;
+								FormMain.Default.Panel2.BackColor = Color.Red;
 							}
 							if (i == 3)
 							{
-								Form1.Default.Panel3.BackColor = Color.Red;
+								FormMain.Default.Panel3.BackColor = Color.Red;
 							}
 							if (i == 4)
 							{
-								Form1.Default.Panel4.BackColor = Color.Red;
+								FormMain.Default.Panel4.BackColor = Color.Red;
 							}
 						}
 						j *= 2;
@@ -273,12 +273,12 @@ namespace WindowsApplication1
 					res[0] = (float)(Conversion.Val(val1));
 					res[1] = (float)(Conversion.Val(val2));
 					res[2] = (float)(Conversion.Val(val3));
-					Form1.Default.Label4.Text = System.Convert.ToString(Conversion.Val(val1));
-					Form1.Default.Label5.Text = System.Convert.ToString(Conversion.Val(val2));
-					Form1.Default.Label6.Text = System.Convert.ToString(Conversion.Val(val3));
-					Form1.Default.ProgressBar1.Value = System.Convert.ToInt32(Conversion.Val(val1));
-					Form1.Default.ProgressBar2.Value = System.Convert.ToInt32(Conversion.Val(val2));
-					Form1.Default.ProgressBar3.Value = System.Convert.ToInt32(Conversion.Val(val3));
+					FormMain.Default.Label4.Text = System.Convert.ToString(Conversion.Val(val1));
+					FormMain.Default.Label5.Text = System.Convert.ToString(Conversion.Val(val2));
+					FormMain.Default.Label6.Text = System.Convert.ToString(Conversion.Val(val3));
+					FormMain.Default.ProgressBar1.Value = System.Convert.ToInt32(Conversion.Val(val1));
+					FormMain.Default.ProgressBar2.Value = System.Convert.ToInt32(Conversion.Val(val2));
+					FormMain.Default.ProgressBar3.Value = System.Convert.ToInt32(Conversion.Val(val3));
 
 					//For i = 0 To 2
 					//Shape4(i).FillColor = vbGreen

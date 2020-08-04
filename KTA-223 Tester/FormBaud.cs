@@ -65,24 +65,24 @@ namespace WindowsApplication1
 				}
 
 				// If the serial port is open...
-				if (Form1.Default.SerialPort1.IsOpen)
+				if (FormMain.Default.SerialPort1.IsOpen)
 				{
 					// Close it.
-					Form1.Default.SerialPort1.Close();
+					FormMain.Default.SerialPort1.Close();
 				}
 
 				// Set the new baud rate.
-				Form1.Default.SerialPort1.BaudRate = mybaud;
+				FormMain.Default.SerialPort1.BaudRate = mybaud;
 
 				// Open the serial port again.
-				Form1.Default.SerialPort1.Open();
+				FormMain.Default.SerialPort1.Open();
 
 				// Close the form.
 				Close();
 			}
 			catch (Exception)
 			{
-				MessageBox.Show("Error Opening " + Form1.Default.SerialPort1.PortName);
+				MessageBox.Show("Error Opening " + FormMain.Default.SerialPort1.PortName);
 			}
 		}
 
