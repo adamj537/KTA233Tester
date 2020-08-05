@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace KTA233Tester
 {
 	partial class FormMain
 	{

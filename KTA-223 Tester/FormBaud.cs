@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace KTA233Tester
 {
 	public partial class FormBaud : Form
 	{
