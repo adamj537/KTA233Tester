@@ -13,7 +13,7 @@ namespace KTA233Tester
 
 		private void TextBoxPort_TextChanged(object sender, EventArgs e)
 		{
-			//Properties.Settings.Default.Port = textBoxPort.Text;
+			Properties.Settings.Default.Port = Convert.ToUInt32(textBoxPort.Text);
 		}
 
 		private void ButtonOpenPort_Click(object sender, EventArgs e)
@@ -38,6 +38,7 @@ namespace KTA233Tester
 		{
 			FormBaud formBaud = new FormBaud();
 			formBaud.Show();
+			formBaud.Dispose();
 		}
 
 		private void ButtonChangeAddr_Click(object sender, EventArgs e)
