@@ -1,4 +1,4 @@
-﻿namespace KTA233Tester
+﻿namespace KTA22xTester
 {
 	partial class FormBaud
 	{

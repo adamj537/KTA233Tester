@@ -1,4 +1,4 @@
-﻿namespace KTA233Tester
+﻿namespace KTA22xTester
 {
 	partial class FormMain
 	{
@@ -28,587 +28,635 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-			this.GroupBox5 = new System.Windows.Forms.GroupBox();
-			this.buttonOpenPort = new System.Windows.Forms.Button();
-			this.buttonBaud = new System.Windows.Forms.Button();
-			this.Label14 = new System.Windows.Forms.Label();
-			this.Label13 = new System.Windows.Forms.Label();
-			this.textBoxRX = new System.Windows.Forms.TextBox();
-			this.textBoxTX = new System.Windows.Forms.TextBox();
-			this.Label12 = new System.Windows.Forms.Label();
-			this.textBoxAddr = new System.Windows.Forms.TextBox();
-			this.labelPort = new System.Windows.Forms.Label();
-			this.textBoxPort = new System.Windows.Forms.TextBox();
-			this.Panel3 = new System.Windows.Forms.Panel();
-			this.Panel2 = new System.Windows.Forms.Panel();
-			this.Label10 = new System.Windows.Forms.Label();
-			this.Label7 = new System.Windows.Forms.Label();
-			this.Label8 = new System.Windows.Forms.Label();
-			this.Label9 = new System.Windows.Forms.Label();
-			this.GroupBox4 = new System.Windows.Forms.GroupBox();
-			this.buttonChangeAddr = new System.Windows.Forms.Button();
-			this.textBoxNewAddr = new System.Windows.Forms.TextBox();
-			this.Panel4 = new System.Windows.Forms.Panel();
-			this.GroupBox3 = new System.Windows.Forms.GroupBox();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.Timer3 = new System.Windows.Forms.Timer(this.components);
-			this.SerialPort1 = new System.IO.Ports.SerialPort(this.components);
-			this.Timer1 = new System.Windows.Forms.Timer(this.components);
-			this.GroupBox1 = new System.Windows.Forms.GroupBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.Label3 = new System.Windows.Forms.Label();
-			this.Label2 = new System.Windows.Forms.Label();
-			this.Label1 = new System.Windows.Forms.Label();
-			this.progressBar3 = new System.Windows.Forms.ProgressBar();
-			this.progressBar1 = new System.Windows.Forms.ProgressBar();
-			this.progressBar2 = new System.Windows.Forms.ProgressBar();
-			this.Timer2 = new System.Windows.Forms.Timer(this.components);
-			this.GroupBox2 = new System.Windows.Forms.GroupBox();
-			this.buttonAllOff = new System.Windows.Forms.Button();
-			this.buttonAllOn = new System.Windows.Forms.Button();
-			this.buttonToggle8 = new System.Windows.Forms.Button();
-			this.buttonToggle7 = new System.Windows.Forms.Button();
-			this.buttonToggle6 = new System.Windows.Forms.Button();
-			this.buttonToggle5 = new System.Windows.Forms.Button();
-			this.buttonToggle3 = new System.Windows.Forms.Button();
-			this.buttonToggle4 = new System.Windows.Forms.Button();
-			this.buttonToggle2 = new System.Windows.Forms.Button();
-			this.buttonToggle1 = new System.Windows.Forms.Button();
-			this.GroupBox5.SuspendLayout();
-			this.GroupBox4.SuspendLayout();
-			this.GroupBox3.SuspendLayout();
-			this.GroupBox1.SuspendLayout();
-			this.GroupBox2.SuspendLayout();
-			this.SuspendLayout();
+			GroupBox5 = new GroupBox();
+			buttonOpenPort = new Button();
+			buttonBaud = new Button();
+			Label14 = new Label();
+			Label13 = new Label();
+			textBoxRX = new TextBox();
+			textBoxTX = new TextBox();
+			Label12 = new Label();
+			textBoxAddr = new TextBox();
+			labelPort = new Label();
+			textBoxPort = new TextBox();
+			Panel3 = new Panel();
+			Panel2 = new Panel();
+			Label10 = new Label();
+			Label7 = new Label();
+			Label8 = new Label();
+			Label9 = new Label();
+			GroupBox4 = new GroupBox();
+			buttonChangeAddr = new Button();
+			textBoxNewAddr = new TextBox();
+			Panel4 = new Panel();
+			GroupBox3 = new GroupBox();
+			panel1 = new Panel();
+			Timer3 = new System.Windows.Forms.Timer(components);
+			Timer1 = new System.Windows.Forms.Timer(components);
+			GroupBox1 = new GroupBox();
+			label6 = new Label();
+			label5 = new Label();
+			label4 = new Label();
+			Label3 = new Label();
+			Label2 = new Label();
+			Label1 = new Label();
+			progressBar3 = new ProgressBar();
+			progressBar1 = new ProgressBar();
+			progressBar2 = new ProgressBar();
+			Timer2 = new System.Windows.Forms.Timer(components);
+			GroupBox2 = new GroupBox();
+			buttonAllOff = new Button();
+			buttonAllOn = new Button();
+			buttonToggle8 = new Button();
+			buttonToggle7 = new Button();
+			buttonToggle6 = new Button();
+			buttonToggle5 = new Button();
+			buttonToggle3 = new Button();
+			buttonToggle4 = new Button();
+			buttonToggle2 = new Button();
+			buttonToggle1 = new Button();
+			GroupBox5.SuspendLayout();
+			GroupBox4.SuspendLayout();
+			GroupBox3.SuspendLayout();
+			GroupBox1.SuspendLayout();
+			GroupBox2.SuspendLayout();
+			SuspendLayout();
 			// 
 			// GroupBox5
 			// 
-			this.GroupBox5.Controls.Add(this.buttonOpenPort);
-			this.GroupBox5.Controls.Add(this.buttonBaud);
-			this.GroupBox5.Controls.Add(this.Label14);
-			this.GroupBox5.Controls.Add(this.Label13);
-			this.GroupBox5.Controls.Add(this.textBoxRX);
-			this.GroupBox5.Controls.Add(this.textBoxTX);
-			this.GroupBox5.Controls.Add(this.Label12);
-			this.GroupBox5.Controls.Add(this.textBoxAddr);
-			this.GroupBox5.Controls.Add(this.labelPort);
-			this.GroupBox5.Controls.Add(this.textBoxPort);
-			this.GroupBox5.Location = new System.Drawing.Point(12, 12);
-			this.GroupBox5.Name = "GroupBox5";
-			this.GroupBox5.Size = new System.Drawing.Size(254, 72);
-			this.GroupBox5.TabIndex = 14;
-			this.GroupBox5.TabStop = false;
-			this.GroupBox5.Text = "Comms";
+			GroupBox5.Controls.Add(buttonOpenPort);
+			GroupBox5.Controls.Add(buttonBaud);
+			GroupBox5.Controls.Add(Label14);
+			GroupBox5.Controls.Add(Label13);
+			GroupBox5.Controls.Add(textBoxRX);
+			GroupBox5.Controls.Add(textBoxTX);
+			GroupBox5.Controls.Add(Label12);
+			GroupBox5.Controls.Add(textBoxAddr);
+			GroupBox5.Controls.Add(labelPort);
+			GroupBox5.Controls.Add(textBoxPort);
+			GroupBox5.Location = new Point(14, 14);
+			GroupBox5.Margin = new Padding(4, 3, 4, 3);
+			GroupBox5.Name = "GroupBox5";
+			GroupBox5.Padding = new Padding(4, 3, 4, 3);
+			GroupBox5.Size = new Size(296, 83);
+			GroupBox5.TabIndex = 14;
+			GroupBox5.TabStop = false;
+			GroupBox5.Text = "Comms";
 			// 
 			// buttonOpenPort
 			// 
-			this.buttonOpenPort.Location = new System.Drawing.Point(66, 18);
-			this.buttonOpenPort.Name = "buttonOpenPort";
-			this.buttonOpenPort.Size = new System.Drawing.Size(45, 20);
-			this.buttonOpenPort.TabIndex = 16;
-			this.buttonOpenPort.Text = "Open";
-			this.buttonOpenPort.UseVisualStyleBackColor = true;
-			this.buttonOpenPort.Click += new System.EventHandler(this.ButtonOpenPort_Click);
+			buttonOpenPort.Location = new Point(77, 21);
+			buttonOpenPort.Margin = new Padding(4, 3, 4, 3);
+			buttonOpenPort.Name = "buttonOpenPort";
+			buttonOpenPort.Size = new Size(52, 23);
+			buttonOpenPort.TabIndex = 16;
+			buttonOpenPort.Text = "Open";
+			buttonOpenPort.UseVisualStyleBackColor = true;
+			buttonOpenPort.Click += ButtonOpenPort_Click;
 			// 
 			// buttonBaud
 			// 
-			this.buttonBaud.Location = new System.Drawing.Point(117, 18);
-			this.buttonBaud.Name = "buttonBaud";
-			this.buttonBaud.Size = new System.Drawing.Size(43, 20);
-			this.buttonBaud.TabIndex = 15;
-			this.buttonBaud.Text = "Baud";
-			this.buttonBaud.UseVisualStyleBackColor = true;
-			this.buttonBaud.Click += new System.EventHandler(this.ButtonBaud_Click);
+			buttonBaud.Location = new Point(136, 21);
+			buttonBaud.Margin = new Padding(4, 3, 4, 3);
+			buttonBaud.Name = "buttonBaud";
+			buttonBaud.Size = new Size(50, 23);
+			buttonBaud.TabIndex = 15;
+			buttonBaud.Text = "Baud";
+			buttonBaud.UseVisualStyleBackColor = true;
+			buttonBaud.Click += ButtonBaud_Click;
 			// 
 			// Label14
 			// 
-			this.Label14.AutoSize = true;
-			this.Label14.Location = new System.Drawing.Point(129, 48);
-			this.Label14.Name = "Label14";
-			this.Label14.Size = new System.Drawing.Size(25, 13);
-			this.Label14.TabIndex = 14;
-			this.Label14.Text = "RX:";
+			Label14.AutoSize = true;
+			Label14.Location = new Point(150, 55);
+			Label14.Margin = new Padding(4, 0, 4, 0);
+			Label14.Name = "Label14";
+			Label14.Size = new Size(24, 15);
+			Label14.TabIndex = 14;
+			Label14.Text = "RX:";
 			// 
 			// Label13
 			// 
-			this.Label13.AutoSize = true;
-			this.Label13.Location = new System.Drawing.Point(9, 48);
-			this.Label13.Name = "Label13";
-			this.Label13.Size = new System.Drawing.Size(24, 13);
-			this.Label13.TabIndex = 13;
-			this.Label13.Text = "TX:";
+			Label13.AutoSize = true;
+			Label13.Location = new Point(10, 55);
+			Label13.Margin = new Padding(4, 0, 4, 0);
+			Label13.Name = "Label13";
+			Label13.Size = new Size(23, 15);
+			Label13.TabIndex = 13;
+			Label13.Text = "TX:";
 			// 
 			// textBoxRX
 			// 
-			this.textBoxRX.Enabled = false;
-			this.textBoxRX.Location = new System.Drawing.Point(160, 45);
-			this.textBoxRX.Name = "textBoxRX";
-			this.textBoxRX.Size = new System.Drawing.Size(86, 20);
-			this.textBoxRX.TabIndex = 12;
+			textBoxRX.Enabled = false;
+			textBoxRX.Location = new Point(187, 52);
+			textBoxRX.Margin = new Padding(4, 3, 4, 3);
+			textBoxRX.Name = "textBoxRX";
+			textBoxRX.Size = new Size(100, 23);
+			textBoxRX.TabIndex = 12;
 			// 
 			// textBoxTX
 			// 
-			this.textBoxTX.Enabled = false;
-			this.textBoxTX.Location = new System.Drawing.Point(39, 44);
-			this.textBoxTX.Name = "textBoxTX";
-			this.textBoxTX.Size = new System.Drawing.Size(86, 20);
-			this.textBoxTX.TabIndex = 11;
+			textBoxTX.Enabled = false;
+			textBoxTX.Location = new Point(46, 51);
+			textBoxTX.Margin = new Padding(4, 3, 4, 3);
+			textBoxTX.Name = "textBoxTX";
+			textBoxTX.Size = new Size(100, 23);
+			textBoxTX.TabIndex = 11;
 			// 
 			// Label12
 			// 
-			this.Label12.AutoSize = true;
-			this.Label12.Location = new System.Drawing.Point(166, 21);
-			this.Label12.Name = "Label12";
-			this.Label12.Size = new System.Drawing.Size(48, 13);
-			this.Label12.TabIndex = 10;
-			this.Label12.Text = "Address:";
-			this.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			Label12.AutoSize = true;
+			Label12.Location = new Point(194, 24);
+			Label12.Margin = new Padding(4, 0, 4, 0);
+			Label12.Name = "Label12";
+			Label12.Size = new Size(52, 15);
+			Label12.TabIndex = 10;
+			Label12.Text = "Address:";
+			Label12.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// textBoxAddr
 			// 
-			this.textBoxAddr.Location = new System.Drawing.Point(218, 18);
-			this.textBoxAddr.MaxLength = 2;
-			this.textBoxAddr.Name = "textBoxAddr";
-			this.textBoxAddr.Size = new System.Drawing.Size(28, 20);
-			this.textBoxAddr.TabIndex = 9;
-			this.textBoxAddr.Text = "0";
+			textBoxAddr.Location = new Point(254, 21);
+			textBoxAddr.Margin = new Padding(4, 3, 4, 3);
+			textBoxAddr.MaxLength = 2;
+			textBoxAddr.Name = "textBoxAddr";
+			textBoxAddr.Size = new Size(32, 23);
+			textBoxAddr.TabIndex = 9;
+			textBoxAddr.Text = "0";
 			// 
 			// labelPort
 			// 
-			this.labelPort.AutoSize = true;
-			this.labelPort.Location = new System.Drawing.Point(6, 21);
-			this.labelPort.Name = "labelPort";
-			this.labelPort.Size = new System.Drawing.Size(29, 13);
-			this.labelPort.TabIndex = 8;
-			this.labelPort.Text = "Port:";
+			labelPort.AutoSize = true;
+			labelPort.Location = new Point(7, 24);
+			labelPort.Margin = new Padding(4, 0, 4, 0);
+			labelPort.Name = "labelPort";
+			labelPort.Size = new Size(32, 15);
+			labelPort.TabIndex = 8;
+			labelPort.Text = "Port:";
 			// 
 			// textBoxPort
 			// 
-			this.textBoxPort.Location = new System.Drawing.Point(38, 18);
-			this.textBoxPort.MaxLength = 2;
-			this.textBoxPort.Name = "textBoxPort";
-			this.textBoxPort.Size = new System.Drawing.Size(21, 20);
-			this.textBoxPort.TabIndex = 0;
-			this.textBoxPort.Text = "1";
-			this.textBoxPort.TextChanged += new System.EventHandler(this.TextBoxPort_TextChanged);
+			textBoxPort.Location = new Point(44, 21);
+			textBoxPort.Margin = new Padding(4, 3, 4, 3);
+			textBoxPort.MaxLength = 2;
+			textBoxPort.Name = "textBoxPort";
+			textBoxPort.Size = new Size(24, 23);
+			textBoxPort.TabIndex = 0;
+			textBoxPort.Text = "1";
+			textBoxPort.TextChanged += TextBoxPort_TextChanged;
 			// 
 			// Panel3
 			// 
-			this.Panel3.BackColor = System.Drawing.Color.Red;
-			this.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.Panel3.Location = new System.Drawing.Point(50, 65);
-			this.Panel3.Name = "Panel3";
-			this.Panel3.Size = new System.Drawing.Size(25, 15);
-			this.Panel3.TabIndex = 7;
+			Panel3.BackColor = Color.Red;
+			Panel3.BorderStyle = BorderStyle.Fixed3D;
+			Panel3.Location = new Point(58, 75);
+			Panel3.Margin = new Padding(4, 3, 4, 3);
+			Panel3.Name = "Panel3";
+			Panel3.Size = new Size(28, 17);
+			Panel3.TabIndex = 7;
 			// 
 			// Panel2
 			// 
-			this.Panel2.BackColor = System.Drawing.Color.Red;
-			this.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.Panel2.Location = new System.Drawing.Point(50, 47);
-			this.Panel2.Name = "Panel2";
-			this.Panel2.Size = new System.Drawing.Size(25, 15);
-			this.Panel2.TabIndex = 7;
+			Panel2.BackColor = Color.Red;
+			Panel2.BorderStyle = BorderStyle.Fixed3D;
+			Panel2.Location = new Point(58, 54);
+			Panel2.Margin = new Padding(4, 3, 4, 3);
+			Panel2.Name = "Panel2";
+			Panel2.Size = new Size(28, 17);
+			Panel2.TabIndex = 7;
 			// 
 			// Label10
 			// 
-			this.Label10.AutoSize = true;
-			this.Label10.Location = new System.Drawing.Point(28, 84);
-			this.Label10.Name = "Label10";
-			this.Label10.Size = new System.Drawing.Size(16, 13);
-			this.Label10.TabIndex = 10;
-			this.Label10.Text = "4:";
-			this.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			Label10.AutoSize = true;
+			Label10.Location = new Point(33, 97);
+			Label10.Margin = new Padding(4, 0, 4, 0);
+			Label10.Name = "Label10";
+			Label10.Size = new Size(16, 15);
+			Label10.TabIndex = 10;
+			Label10.Text = "4:";
+			Label10.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// Label7
 			// 
-			this.Label7.AutoSize = true;
-			this.Label7.Location = new System.Drawing.Point(28, 65);
-			this.Label7.Name = "Label7";
-			this.Label7.Size = new System.Drawing.Size(16, 13);
-			this.Label7.TabIndex = 9;
-			this.Label7.Text = "3:";
-			this.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			Label7.AutoSize = true;
+			Label7.Location = new Point(33, 75);
+			Label7.Margin = new Padding(4, 0, 4, 0);
+			Label7.Name = "Label7";
+			Label7.Size = new Size(16, 15);
+			Label7.TabIndex = 9;
+			Label7.Text = "3:";
+			Label7.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// Label8
 			// 
-			this.Label8.AutoSize = true;
-			this.Label8.Location = new System.Drawing.Point(28, 47);
-			this.Label8.Name = "Label8";
-			this.Label8.Size = new System.Drawing.Size(16, 13);
-			this.Label8.TabIndex = 8;
-			this.Label8.Text = "2:";
-			this.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			Label8.AutoSize = true;
+			Label8.Location = new Point(33, 54);
+			Label8.Margin = new Padding(4, 0, 4, 0);
+			Label8.Name = "Label8";
+			Label8.Size = new Size(16, 15);
+			Label8.TabIndex = 8;
+			Label8.Text = "2:";
+			Label8.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// Label9
 			// 
-			this.Label9.AutoSize = true;
-			this.Label9.Location = new System.Drawing.Point(28, 28);
-			this.Label9.Name = "Label9";
-			this.Label9.Size = new System.Drawing.Size(16, 13);
-			this.Label9.TabIndex = 7;
-			this.Label9.Text = "1:";
-			this.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			Label9.AutoSize = true;
+			Label9.Location = new Point(33, 32);
+			Label9.Margin = new Padding(4, 0, 4, 0);
+			Label9.Name = "Label9";
+			Label9.Size = new Size(16, 15);
+			Label9.TabIndex = 7;
+			Label9.Text = "1:";
+			Label9.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// GroupBox4
 			// 
-			this.GroupBox4.Controls.Add(this.buttonChangeAddr);
-			this.GroupBox4.Controls.Add(this.textBoxNewAddr);
-			this.GroupBox4.Location = new System.Drawing.Point(12, 90);
-			this.GroupBox4.Name = "GroupBox4";
-			this.GroupBox4.Size = new System.Drawing.Size(103, 40);
-			this.GroupBox4.TabIndex = 13;
-			this.GroupBox4.TabStop = false;
-			this.GroupBox4.Text = "Address";
+			GroupBox4.Controls.Add(buttonChangeAddr);
+			GroupBox4.Controls.Add(textBoxNewAddr);
+			GroupBox4.Location = new Point(14, 104);
+			GroupBox4.Margin = new Padding(4, 3, 4, 3);
+			GroupBox4.Name = "GroupBox4";
+			GroupBox4.Padding = new Padding(4, 3, 4, 3);
+			GroupBox4.Size = new Size(120, 46);
+			GroupBox4.TabIndex = 13;
+			GroupBox4.TabStop = false;
+			GroupBox4.Text = "Address";
 			// 
 			// buttonChangeAddr
 			// 
-			this.buttonChangeAddr.Location = new System.Drawing.Point(39, 14);
-			this.buttonChangeAddr.Name = "buttonChangeAddr";
-			this.buttonChangeAddr.Size = new System.Drawing.Size(58, 20);
-			this.buttonChangeAddr.TabIndex = 1;
-			this.buttonChangeAddr.Text = "Change";
-			this.buttonChangeAddr.UseVisualStyleBackColor = true;
-			this.buttonChangeAddr.Click += new System.EventHandler(this.ButtonChangeAddr_Click);
+			buttonChangeAddr.Location = new Point(46, 16);
+			buttonChangeAddr.Margin = new Padding(4, 3, 4, 3);
+			buttonChangeAddr.Name = "buttonChangeAddr";
+			buttonChangeAddr.Size = new Size(68, 23);
+			buttonChangeAddr.TabIndex = 1;
+			buttonChangeAddr.Text = "Change";
+			buttonChangeAddr.UseVisualStyleBackColor = true;
+			buttonChangeAddr.Click += ButtonChangeAddr_Click;
 			// 
 			// textBoxNewAddr
 			// 
-			this.textBoxNewAddr.Location = new System.Drawing.Point(6, 14);
-			this.textBoxNewAddr.MaxLength = 2;
-			this.textBoxNewAddr.Name = "textBoxNewAddr";
-			this.textBoxNewAddr.Size = new System.Drawing.Size(27, 20);
-			this.textBoxNewAddr.TabIndex = 0;
-			this.textBoxNewAddr.Text = "1";
-			this.textBoxNewAddr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			textBoxNewAddr.Location = new Point(7, 16);
+			textBoxNewAddr.Margin = new Padding(4, 3, 4, 3);
+			textBoxNewAddr.MaxLength = 2;
+			textBoxNewAddr.Name = "textBoxNewAddr";
+			textBoxNewAddr.Size = new Size(31, 23);
+			textBoxNewAddr.TabIndex = 0;
+			textBoxNewAddr.Text = "1";
+			textBoxNewAddr.TextAlign = HorizontalAlignment.Right;
 			// 
 			// Panel4
 			// 
-			this.Panel4.BackColor = System.Drawing.Color.Red;
-			this.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.Panel4.Location = new System.Drawing.Point(50, 84);
-			this.Panel4.Name = "Panel4";
-			this.Panel4.Size = new System.Drawing.Size(25, 15);
-			this.Panel4.TabIndex = 7;
+			Panel4.BackColor = Color.Red;
+			Panel4.BorderStyle = BorderStyle.Fixed3D;
+			Panel4.Location = new Point(58, 97);
+			Panel4.Margin = new Padding(4, 3, 4, 3);
+			Panel4.Name = "Panel4";
+			Panel4.Size = new Size(28, 17);
+			Panel4.TabIndex = 7;
 			// 
 			// GroupBox3
 			// 
-			this.GroupBox3.Controls.Add(this.Panel4);
-			this.GroupBox3.Controls.Add(this.Panel3);
-			this.GroupBox3.Controls.Add(this.Panel2);
-			this.GroupBox3.Controls.Add(this.Label10);
-			this.GroupBox3.Controls.Add(this.Label7);
-			this.GroupBox3.Controls.Add(this.Label8);
-			this.GroupBox3.Controls.Add(this.Label9);
-			this.GroupBox3.Controls.Add(this.panel1);
-			this.GroupBox3.Location = new System.Drawing.Point(12, 137);
-			this.GroupBox3.Name = "GroupBox3";
-			this.GroupBox3.Size = new System.Drawing.Size(104, 116);
-			this.GroupBox3.TabIndex = 12;
-			this.GroupBox3.TabStop = false;
-			this.GroupBox3.Text = "Digital Inputs";
+			GroupBox3.Controls.Add(Panel4);
+			GroupBox3.Controls.Add(Panel3);
+			GroupBox3.Controls.Add(Panel2);
+			GroupBox3.Controls.Add(Label10);
+			GroupBox3.Controls.Add(Label7);
+			GroupBox3.Controls.Add(Label8);
+			GroupBox3.Controls.Add(Label9);
+			GroupBox3.Controls.Add(panel1);
+			GroupBox3.Location = new Point(14, 158);
+			GroupBox3.Margin = new Padding(4, 3, 4, 3);
+			GroupBox3.Name = "GroupBox3";
+			GroupBox3.Padding = new Padding(4, 3, 4, 3);
+			GroupBox3.Size = new Size(121, 134);
+			GroupBox3.TabIndex = 12;
+			GroupBox3.TabStop = false;
+			GroupBox3.Text = "Digital Inputs";
 			// 
 			// panel1
 			// 
-			this.panel1.BackColor = System.Drawing.Color.Red;
-			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel1.Location = new System.Drawing.Point(50, 28);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(25, 15);
-			this.panel1.TabIndex = 6;
+			panel1.BackColor = Color.Red;
+			panel1.BorderStyle = BorderStyle.Fixed3D;
+			panel1.Location = new Point(58, 32);
+			panel1.Margin = new Padding(4, 3, 4, 3);
+			panel1.Name = "panel1";
+			panel1.Size = new Size(28, 17);
+			panel1.TabIndex = 6;
 			// 
 			// Timer3
 			// 
-			this.Timer3.Enabled = true;
-			this.Timer3.Interval = 500;
-			this.Timer3.Tick += new System.EventHandler(this.Timer3_Tick);
+			Timer3.Enabled = true;
+			Timer3.Interval = 500;
+			Timer3.Tick += Timer3_Tick;
 			// 
 			// Timer1
 			// 
-			this.Timer1.Enabled = true;
-			this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+			Timer1.Enabled = true;
+			Timer1.Tick += Timer1_Tick;
 			// 
 			// GroupBox1
 			// 
-			this.GroupBox1.Controls.Add(this.label6);
-			this.GroupBox1.Controls.Add(this.label5);
-			this.GroupBox1.Controls.Add(this.label4);
-			this.GroupBox1.Controls.Add(this.Label3);
-			this.GroupBox1.Controls.Add(this.Label2);
-			this.GroupBox1.Controls.Add(this.Label1);
-			this.GroupBox1.Controls.Add(this.progressBar3);
-			this.GroupBox1.Controls.Add(this.progressBar1);
-			this.GroupBox1.Controls.Add(this.progressBar2);
-			this.GroupBox1.Location = new System.Drawing.Point(12, 259);
-			this.GroupBox1.Name = "GroupBox1";
-			this.GroupBox1.Size = new System.Drawing.Size(254, 78);
-			this.GroupBox1.TabIndex = 10;
-			this.GroupBox1.TabStop = false;
-			this.GroupBox1.Text = "Analog Inputs";
+			GroupBox1.Controls.Add(label6);
+			GroupBox1.Controls.Add(label5);
+			GroupBox1.Controls.Add(label4);
+			GroupBox1.Controls.Add(Label3);
+			GroupBox1.Controls.Add(Label2);
+			GroupBox1.Controls.Add(Label1);
+			GroupBox1.Controls.Add(progressBar3);
+			GroupBox1.Controls.Add(progressBar1);
+			GroupBox1.Controls.Add(progressBar2);
+			GroupBox1.Location = new Point(14, 299);
+			GroupBox1.Margin = new Padding(4, 3, 4, 3);
+			GroupBox1.Name = "GroupBox1";
+			GroupBox1.Padding = new Padding(4, 3, 4, 3);
+			GroupBox1.Size = new Size(296, 90);
+			GroupBox1.TabIndex = 10;
+			GroupBox1.TabStop = false;
+			GroupBox1.Text = "Analog Inputs";
 			// 
 			// label6
 			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(28, 56);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(31, 13);
-			this.label6.TabIndex = 8;
-			this.label6.Text = "1023";
-			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			label6.AutoSize = true;
+			label6.Location = new Point(33, 65);
+			label6.Margin = new Padding(4, 0, 4, 0);
+			label6.Name = "label6";
+			label6.Size = new Size(31, 15);
+			label6.TabIndex = 8;
+			label6.Text = "1023";
+			label6.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// label5
 			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(28, 38);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(31, 13);
-			this.label5.TabIndex = 7;
-			this.label5.Text = "1023";
-			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			label5.AutoSize = true;
+			label5.Location = new Point(33, 44);
+			label5.Margin = new Padding(4, 0, 4, 0);
+			label5.Name = "label5";
+			label5.Size = new Size(31, 15);
+			label5.TabIndex = 7;
+			label5.Text = "1023";
+			label5.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// label4
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(28, 19);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(31, 13);
-			this.label4.TabIndex = 6;
-			this.label4.Text = "1023";
-			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			label4.AutoSize = true;
+			label4.Location = new Point(33, 22);
+			label4.Margin = new Padding(4, 0, 4, 0);
+			label4.Name = "label4";
+			label4.Size = new Size(31, 15);
+			label4.TabIndex = 6;
+			label4.Text = "1023";
+			label4.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// Label3
 			// 
-			this.Label3.AutoSize = true;
-			this.Label3.Location = new System.Drawing.Point(6, 56);
-			this.Label3.Name = "Label3";
-			this.Label3.Size = new System.Drawing.Size(16, 13);
-			this.Label3.TabIndex = 5;
-			this.Label3.Text = "3:";
-			this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			Label3.AutoSize = true;
+			Label3.Location = new Point(7, 65);
+			Label3.Margin = new Padding(4, 0, 4, 0);
+			Label3.Name = "Label3";
+			Label3.Size = new Size(16, 15);
+			Label3.TabIndex = 5;
+			Label3.Text = "3:";
+			Label3.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// Label2
 			// 
-			this.Label2.AutoSize = true;
-			this.Label2.Location = new System.Drawing.Point(6, 38);
-			this.Label2.Name = "Label2";
-			this.Label2.Size = new System.Drawing.Size(16, 13);
-			this.Label2.TabIndex = 4;
-			this.Label2.Text = "2:";
-			this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			Label2.AutoSize = true;
+			Label2.Location = new Point(7, 44);
+			Label2.Margin = new Padding(4, 0, 4, 0);
+			Label2.Name = "Label2";
+			Label2.Size = new Size(16, 15);
+			Label2.TabIndex = 4;
+			Label2.Text = "2:";
+			Label2.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// Label1
 			// 
-			this.Label1.AutoSize = true;
-			this.Label1.Location = new System.Drawing.Point(6, 19);
-			this.Label1.Name = "Label1";
-			this.Label1.Size = new System.Drawing.Size(16, 13);
-			this.Label1.TabIndex = 3;
-			this.Label1.Text = "1:";
-			this.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			Label1.AutoSize = true;
+			Label1.Location = new Point(7, 22);
+			Label1.Margin = new Padding(4, 0, 4, 0);
+			Label1.Name = "Label1";
+			Label1.Size = new Size(16, 15);
+			Label1.TabIndex = 3;
+			Label1.Text = "1:";
+			Label1.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// progressBar3
 			// 
-			this.progressBar3.Location = new System.Drawing.Point(70, 56);
-			this.progressBar3.Maximum = 1023;
-			this.progressBar3.Name = "progressBar3";
-			this.progressBar3.Size = new System.Drawing.Size(178, 13);
-			this.progressBar3.Step = 1;
-			this.progressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.progressBar3.TabIndex = 2;
-			this.progressBar3.Value = 512;
+			progressBar3.Location = new Point(82, 65);
+			progressBar3.Margin = new Padding(4, 3, 4, 3);
+			progressBar3.Maximum = 1023;
+			progressBar3.Name = "progressBar3";
+			progressBar3.Size = new Size(208, 15);
+			progressBar3.Step = 1;
+			progressBar3.Style = ProgressBarStyle.Continuous;
+			progressBar3.TabIndex = 2;
+			progressBar3.Value = 512;
 			// 
 			// progressBar1
 			// 
-			this.progressBar1.Location = new System.Drawing.Point(70, 19);
-			this.progressBar1.Maximum = 1023;
-			this.progressBar1.Name = "progressBar1";
-			this.progressBar1.Size = new System.Drawing.Size(178, 13);
-			this.progressBar1.Step = 1;
-			this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.progressBar1.TabIndex = 0;
-			this.progressBar1.Value = 512;
+			progressBar1.Location = new Point(82, 22);
+			progressBar1.Margin = new Padding(4, 3, 4, 3);
+			progressBar1.Maximum = 1023;
+			progressBar1.Name = "progressBar1";
+			progressBar1.Size = new Size(208, 15);
+			progressBar1.Step = 1;
+			progressBar1.Style = ProgressBarStyle.Continuous;
+			progressBar1.TabIndex = 0;
+			progressBar1.Value = 512;
 			// 
 			// progressBar2
 			// 
-			this.progressBar2.Location = new System.Drawing.Point(70, 38);
-			this.progressBar2.Maximum = 1023;
-			this.progressBar2.Name = "progressBar2";
-			this.progressBar2.Size = new System.Drawing.Size(178, 13);
-			this.progressBar2.Step = 1;
-			this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.progressBar2.TabIndex = 1;
-			this.progressBar2.Value = 512;
+			progressBar2.Location = new Point(82, 44);
+			progressBar2.Margin = new Padding(4, 3, 4, 3);
+			progressBar2.Maximum = 1023;
+			progressBar2.Name = "progressBar2";
+			progressBar2.Size = new Size(208, 15);
+			progressBar2.Step = 1;
+			progressBar2.Style = ProgressBarStyle.Continuous;
+			progressBar2.TabIndex = 1;
+			progressBar2.Value = 512;
 			// 
 			// Timer2
 			// 
-			this.Timer2.Enabled = true;
-			this.Timer2.Interval = 250;
-			this.Timer2.Tick += new System.EventHandler(this.Timer2_Tick);
+			Timer2.Enabled = true;
+			Timer2.Interval = 250;
+			Timer2.Tick += Timer2_Tick;
 			// 
 			// GroupBox2
 			// 
-			this.GroupBox2.Controls.Add(this.buttonAllOff);
-			this.GroupBox2.Controls.Add(this.buttonAllOn);
-			this.GroupBox2.Controls.Add(this.buttonToggle8);
-			this.GroupBox2.Controls.Add(this.buttonToggle7);
-			this.GroupBox2.Controls.Add(this.buttonToggle6);
-			this.GroupBox2.Controls.Add(this.buttonToggle5);
-			this.GroupBox2.Controls.Add(this.buttonToggle3);
-			this.GroupBox2.Controls.Add(this.buttonToggle4);
-			this.GroupBox2.Controls.Add(this.buttonToggle2);
-			this.GroupBox2.Controls.Add(this.buttonToggle1);
-			this.GroupBox2.Location = new System.Drawing.Point(122, 90);
-			this.GroupBox2.Name = "GroupBox2";
-			this.GroupBox2.Size = new System.Drawing.Size(144, 163);
-			this.GroupBox2.TabIndex = 11;
-			this.GroupBox2.TabStop = false;
-			this.GroupBox2.Text = "Relays";
+			GroupBox2.Controls.Add(buttonAllOff);
+			GroupBox2.Controls.Add(buttonAllOn);
+			GroupBox2.Controls.Add(buttonToggle8);
+			GroupBox2.Controls.Add(buttonToggle7);
+			GroupBox2.Controls.Add(buttonToggle6);
+			GroupBox2.Controls.Add(buttonToggle5);
+			GroupBox2.Controls.Add(buttonToggle3);
+			GroupBox2.Controls.Add(buttonToggle4);
+			GroupBox2.Controls.Add(buttonToggle2);
+			GroupBox2.Controls.Add(buttonToggle1);
+			GroupBox2.Location = new Point(142, 104);
+			GroupBox2.Margin = new Padding(4, 3, 4, 3);
+			GroupBox2.Name = "GroupBox2";
+			GroupBox2.Padding = new Padding(4, 3, 4, 3);
+			GroupBox2.Size = new Size(168, 188);
+			GroupBox2.TabIndex = 11;
+			GroupBox2.TabStop = false;
+			GroupBox2.Text = "Relays";
 			// 
 			// buttonAllOff
 			// 
-			this.buttonAllOff.BackColor = System.Drawing.SystemColors.Control;
-			this.buttonAllOff.Location = new System.Drawing.Point(74, 131);
-			this.buttonAllOff.Name = "buttonAllOff";
-			this.buttonAllOff.Size = new System.Drawing.Size(62, 22);
-			this.buttonAllOff.TabIndex = 1;
-			this.buttonAllOff.Text = "ALL OFF";
-			this.buttonAllOff.UseVisualStyleBackColor = false;
-			this.buttonAllOff.Click += new System.EventHandler(this.ButtonAllOff_Click);
+			buttonAllOff.BackColor = SystemColors.Control;
+			buttonAllOff.Location = new Point(86, 151);
+			buttonAllOff.Margin = new Padding(4, 3, 4, 3);
+			buttonAllOff.Name = "buttonAllOff";
+			buttonAllOff.Size = new Size(72, 25);
+			buttonAllOff.TabIndex = 1;
+			buttonAllOff.Text = "ALL OFF";
+			buttonAllOff.UseVisualStyleBackColor = false;
+			buttonAllOff.Click += ButtonAllOff_Click;
 			// 
 			// buttonAllOn
 			// 
-			this.buttonAllOn.BackColor = System.Drawing.SystemColors.Control;
-			this.buttonAllOn.Location = new System.Drawing.Point(6, 131);
-			this.buttonAllOn.Name = "buttonAllOn";
-			this.buttonAllOn.Size = new System.Drawing.Size(62, 22);
-			this.buttonAllOn.TabIndex = 1;
-			this.buttonAllOn.Text = "ALL ON";
-			this.buttonAllOn.UseVisualStyleBackColor = false;
-			this.buttonAllOn.Click += new System.EventHandler(this.ButtonAllOn_Click);
+			buttonAllOn.BackColor = SystemColors.Control;
+			buttonAllOn.Location = new Point(7, 151);
+			buttonAllOn.Margin = new Padding(4, 3, 4, 3);
+			buttonAllOn.Name = "buttonAllOn";
+			buttonAllOn.Size = new Size(72, 25);
+			buttonAllOn.TabIndex = 1;
+			buttonAllOn.Text = "ALL ON";
+			buttonAllOn.UseVisualStyleBackColor = false;
+			buttonAllOn.Click += ButtonAllOn_Click;
 			// 
 			// buttonToggle8
 			// 
-			this.buttonToggle8.BackColor = System.Drawing.Color.Red;
-			this.buttonToggle8.ForeColor = System.Drawing.Color.White;
-			this.buttonToggle8.Location = new System.Drawing.Point(74, 103);
-			this.buttonToggle8.Name = "buttonToggle8";
-			this.buttonToggle8.Size = new System.Drawing.Size(62, 22);
-			this.buttonToggle8.TabIndex = 1;
-			this.buttonToggle8.Text = "Toggle 8";
-			this.buttonToggle8.UseVisualStyleBackColor = false;
-			this.buttonToggle8.Click += new System.EventHandler(this.ButtonToggle8_Click);
+			buttonToggle8.BackColor = Color.Red;
+			buttonToggle8.ForeColor = Color.White;
+			buttonToggle8.Location = new Point(86, 119);
+			buttonToggle8.Margin = new Padding(4, 3, 4, 3);
+			buttonToggle8.Name = "buttonToggle8";
+			buttonToggle8.Size = new Size(72, 25);
+			buttonToggle8.TabIndex = 1;
+			buttonToggle8.Text = "Toggle 8";
+			buttonToggle8.UseVisualStyleBackColor = false;
+			buttonToggle8.Click += ButtonToggle8_Click;
 			// 
 			// buttonToggle7
 			// 
-			this.buttonToggle7.BackColor = System.Drawing.Color.Red;
-			this.buttonToggle7.ForeColor = System.Drawing.Color.White;
-			this.buttonToggle7.Location = new System.Drawing.Point(74, 75);
-			this.buttonToggle7.Name = "buttonToggle7";
-			this.buttonToggle7.Size = new System.Drawing.Size(62, 22);
-			this.buttonToggle7.TabIndex = 1;
-			this.buttonToggle7.Text = "Toggle 7";
-			this.buttonToggle7.UseVisualStyleBackColor = false;
-			this.buttonToggle7.Click += new System.EventHandler(this.ButtonToggle7_Click);
+			buttonToggle7.BackColor = Color.Red;
+			buttonToggle7.ForeColor = Color.White;
+			buttonToggle7.Location = new Point(86, 87);
+			buttonToggle7.Margin = new Padding(4, 3, 4, 3);
+			buttonToggle7.Name = "buttonToggle7";
+			buttonToggle7.Size = new Size(72, 25);
+			buttonToggle7.TabIndex = 1;
+			buttonToggle7.Text = "Toggle 7";
+			buttonToggle7.UseVisualStyleBackColor = false;
+			buttonToggle7.Click += ButtonToggle7_Click;
 			// 
 			// buttonToggle6
 			// 
-			this.buttonToggle6.BackColor = System.Drawing.Color.Red;
-			this.buttonToggle6.ForeColor = System.Drawing.Color.White;
-			this.buttonToggle6.Location = new System.Drawing.Point(74, 47);
-			this.buttonToggle6.Name = "buttonToggle6";
-			this.buttonToggle6.Size = new System.Drawing.Size(62, 22);
-			this.buttonToggle6.TabIndex = 1;
-			this.buttonToggle6.Text = "Toggle 6";
-			this.buttonToggle6.UseVisualStyleBackColor = false;
-			this.buttonToggle6.Click += new System.EventHandler(this.ButtonToggle6_Click);
+			buttonToggle6.BackColor = Color.Red;
+			buttonToggle6.ForeColor = Color.White;
+			buttonToggle6.Location = new Point(86, 54);
+			buttonToggle6.Margin = new Padding(4, 3, 4, 3);
+			buttonToggle6.Name = "buttonToggle6";
+			buttonToggle6.Size = new Size(72, 25);
+			buttonToggle6.TabIndex = 1;
+			buttonToggle6.Text = "Toggle 6";
+			buttonToggle6.UseVisualStyleBackColor = false;
+			buttonToggle6.Click += ButtonToggle6_Click;
 			// 
 			// buttonToggle5
 			// 
-			this.buttonToggle5.BackColor = System.Drawing.Color.Red;
-			this.buttonToggle5.ForeColor = System.Drawing.Color.White;
-			this.buttonToggle5.Location = new System.Drawing.Point(74, 19);
-			this.buttonToggle5.Name = "buttonToggle5";
-			this.buttonToggle5.Size = new System.Drawing.Size(62, 22);
-			this.buttonToggle5.TabIndex = 1;
-			this.buttonToggle5.Text = "Toggle 5";
-			this.buttonToggle5.UseVisualStyleBackColor = false;
-			this.buttonToggle5.Click += new System.EventHandler(this.ButtonToggle5_Click);
+			buttonToggle5.BackColor = Color.Red;
+			buttonToggle5.ForeColor = Color.White;
+			buttonToggle5.Location = new Point(86, 22);
+			buttonToggle5.Margin = new Padding(4, 3, 4, 3);
+			buttonToggle5.Name = "buttonToggle5";
+			buttonToggle5.Size = new Size(72, 25);
+			buttonToggle5.TabIndex = 1;
+			buttonToggle5.Text = "Toggle 5";
+			buttonToggle5.UseVisualStyleBackColor = false;
+			buttonToggle5.Click += ButtonToggle5_Click;
 			// 
 			// buttonToggle3
 			// 
-			this.buttonToggle3.BackColor = System.Drawing.Color.Red;
-			this.buttonToggle3.ForeColor = System.Drawing.Color.White;
-			this.buttonToggle3.Location = new System.Drawing.Point(6, 75);
-			this.buttonToggle3.Name = "buttonToggle3";
-			this.buttonToggle3.Size = new System.Drawing.Size(62, 22);
-			this.buttonToggle3.TabIndex = 1;
-			this.buttonToggle3.Text = "Toggle 3";
-			this.buttonToggle3.UseVisualStyleBackColor = false;
-			this.buttonToggle3.Click += new System.EventHandler(this.ButtonToggle3_Click);
+			buttonToggle3.BackColor = Color.Red;
+			buttonToggle3.ForeColor = Color.White;
+			buttonToggle3.Location = new Point(7, 87);
+			buttonToggle3.Margin = new Padding(4, 3, 4, 3);
+			buttonToggle3.Name = "buttonToggle3";
+			buttonToggle3.Size = new Size(72, 25);
+			buttonToggle3.TabIndex = 1;
+			buttonToggle3.Text = "Toggle 3";
+			buttonToggle3.UseVisualStyleBackColor = false;
+			buttonToggle3.Click += ButtonToggle3_Click;
 			// 
 			// buttonToggle4
 			// 
-			this.buttonToggle4.BackColor = System.Drawing.Color.Red;
-			this.buttonToggle4.ForeColor = System.Drawing.Color.White;
-			this.buttonToggle4.Location = new System.Drawing.Point(6, 103);
-			this.buttonToggle4.Name = "buttonToggle4";
-			this.buttonToggle4.Size = new System.Drawing.Size(62, 22);
-			this.buttonToggle4.TabIndex = 1;
-			this.buttonToggle4.Text = "Toggle 4";
-			this.buttonToggle4.UseVisualStyleBackColor = false;
-			this.buttonToggle4.Click += new System.EventHandler(this.ButtonToggle4_Click);
+			buttonToggle4.BackColor = Color.Red;
+			buttonToggle4.ForeColor = Color.White;
+			buttonToggle4.Location = new Point(7, 119);
+			buttonToggle4.Margin = new Padding(4, 3, 4, 3);
+			buttonToggle4.Name = "buttonToggle4";
+			buttonToggle4.Size = new Size(72, 25);
+			buttonToggle4.TabIndex = 1;
+			buttonToggle4.Text = "Toggle 4";
+			buttonToggle4.UseVisualStyleBackColor = false;
+			buttonToggle4.Click += ButtonToggle4_Click;
 			// 
 			// buttonToggle2
 			// 
-			this.buttonToggle2.BackColor = System.Drawing.Color.Red;
-			this.buttonToggle2.ForeColor = System.Drawing.Color.White;
-			this.buttonToggle2.Location = new System.Drawing.Point(6, 47);
-			this.buttonToggle2.Name = "buttonToggle2";
-			this.buttonToggle2.Size = new System.Drawing.Size(62, 22);
-			this.buttonToggle2.TabIndex = 1;
-			this.buttonToggle2.Text = "Toggle 2";
-			this.buttonToggle2.UseVisualStyleBackColor = false;
-			this.buttonToggle2.Click += new System.EventHandler(this.ButtonToggle2_Click);
+			buttonToggle2.BackColor = Color.Red;
+			buttonToggle2.ForeColor = Color.White;
+			buttonToggle2.Location = new Point(7, 54);
+			buttonToggle2.Margin = new Padding(4, 3, 4, 3);
+			buttonToggle2.Name = "buttonToggle2";
+			buttonToggle2.Size = new Size(72, 25);
+			buttonToggle2.TabIndex = 1;
+			buttonToggle2.Text = "Toggle 2";
+			buttonToggle2.UseVisualStyleBackColor = false;
+			buttonToggle2.Click += ButtonToggle2_Click;
 			// 
 			// buttonToggle1
 			// 
-			this.buttonToggle1.BackColor = System.Drawing.Color.Red;
-			this.buttonToggle1.ForeColor = System.Drawing.Color.White;
-			this.buttonToggle1.Location = new System.Drawing.Point(6, 19);
-			this.buttonToggle1.Name = "buttonToggle1";
-			this.buttonToggle1.Size = new System.Drawing.Size(62, 22);
-			this.buttonToggle1.TabIndex = 0;
-			this.buttonToggle1.Text = "Toggle 1";
-			this.buttonToggle1.UseVisualStyleBackColor = false;
-			this.buttonToggle1.Click += new System.EventHandler(this.ButtonToggle1_Click);
+			buttonToggle1.BackColor = Color.Red;
+			buttonToggle1.ForeColor = Color.White;
+			buttonToggle1.Location = new Point(7, 22);
+			buttonToggle1.Margin = new Padding(4, 3, 4, 3);
+			buttonToggle1.Name = "buttonToggle1";
+			buttonToggle1.Size = new Size(72, 25);
+			buttonToggle1.TabIndex = 0;
+			buttonToggle1.Text = "Toggle 1";
+			buttonToggle1.UseVisualStyleBackColor = false;
+			buttonToggle1.Click += ButtonToggle1_Click;
 			// 
 			// FormMain
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(280, 347);
-			this.Controls.Add(this.GroupBox5);
-			this.Controls.Add(this.GroupBox4);
-			this.Controls.Add(this.GroupBox3);
-			this.Controls.Add(this.GroupBox1);
-			this.Controls.Add(this.GroupBox2);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "FormMain";
-			this.Text = "Relay Tester";
-			this.GroupBox5.ResumeLayout(false);
-			this.GroupBox5.PerformLayout();
-			this.GroupBox4.ResumeLayout(false);
-			this.GroupBox4.PerformLayout();
-			this.GroupBox3.ResumeLayout(false);
-			this.GroupBox3.PerformLayout();
-			this.GroupBox1.ResumeLayout(false);
-			this.GroupBox1.PerformLayout();
-			this.GroupBox2.ResumeLayout(false);
-			this.ResumeLayout(false);
-
+			AutoScaleDimensions = new SizeF(7F, 15F);
+			AutoScaleMode = AutoScaleMode.Font;
+			ClientSize = new Size(327, 400);
+			Controls.Add(GroupBox5);
+			Controls.Add(GroupBox4);
+			Controls.Add(GroupBox3);
+			Controls.Add(GroupBox1);
+			Controls.Add(GroupBox2);
+			Icon = (Icon)resources.GetObject("$this.Icon");
+			Margin = new Padding(4, 3, 4, 3);
+			Name = "FormMain";
+			Text = "Relay Tester";
+			GroupBox5.ResumeLayout(false);
+			GroupBox5.PerformLayout();
+			GroupBox4.ResumeLayout(false);
+			GroupBox4.PerformLayout();
+			GroupBox3.ResumeLayout(false);
+			GroupBox3.PerformLayout();
+			GroupBox1.ResumeLayout(false);
+			GroupBox1.PerformLayout();
+			GroupBox2.ResumeLayout(false);
+			ResumeLayout(false);
 		}
 
 		#endregion
@@ -637,7 +685,6 @@
 		internal System.Windows.Forms.GroupBox GroupBox3;
 		internal System.Windows.Forms.Panel panel1;
 		internal System.Windows.Forms.Timer Timer3;
-		internal System.IO.Ports.SerialPort SerialPort1;
 		internal System.Windows.Forms.Timer Timer1;
 		internal System.Windows.Forms.GroupBox GroupBox1;
 		internal System.Windows.Forms.Label label6;

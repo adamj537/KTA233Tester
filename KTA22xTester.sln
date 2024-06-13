@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30309.148
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTA-223 Tester", "KTA-223 Tester\KTA-223 Tester.csproj", "{7376A1AB-81B8-4EB3-92AC-B0EE9848170C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTA22xTester", "KTA22xTester\KTA22xTester.csproj", "{7A39AF27-406C-4FE0-A8E0-F7403A8DC734}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7376A1AB-81B8-4EB3-92AC-B0EE9848170C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7376A1AB-81B8-4EB3-92AC-B0EE9848170C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7376A1AB-81B8-4EB3-92AC-B0EE9848170C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7376A1AB-81B8-4EB3-92AC-B0EE9848170C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A39AF27-406C-4FE0-A8E0-F7403A8DC734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A39AF27-406C-4FE0-A8E0-F7403A8DC734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A39AF27-406C-4FE0-A8E0-F7403A8DC734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A39AF27-406C-4FE0-A8E0-F7403A8DC734}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {ABD6D47B-2C98-4F6C-9053-EF0DD3BBAD04}
+		SolutionGuid = {F7E86B24-62ED-49F3-B287-D7C00673F8B0}
 	EndGlobalSection
 EndGlobal

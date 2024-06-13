@@ -1,11 +1,14 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.IO.Ports;
 
-namespace KTA233Tester
+namespace KTA22xTester
 {
 	public partial class FormMain : Form
 	{
+		private SerialPort SerialPort1 = new();
+
 		public FormMain()
 		{
 			InitializeComponent();
